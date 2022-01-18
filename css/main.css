@@ -75,9 +75,14 @@ h6,
 p {
     text-align: center;
 }
-
-h1 {
+h1, h2, h3, h4, h5, h6 {
+    color:#3b3b3b;
 }
+p {
+    font-size: 13px;
+}
+
+
 
 h3 {
     font-size: larger;
@@ -90,15 +95,24 @@ p {
 .section_title h3 {
     font-size: 30px;
     position: relative;
-    margin: 5px;
+    margin: 2%;
 }
 /* ==========================================================================
  2. LAYOUT
  ========================================================================== */
-.header img {
-    width: 60%;
+ .header {
+    display: flex;
+    width: 80%;
+    align-items: center;
+    flex-direction: column;
+    padding-right: 50%;
+    padding-left: 10%;
+ }
+ .header img {
+    width: 100%;
     height: 60%;
 }
+
 
 .header h1 {
     text-align: left;
@@ -113,25 +127,32 @@ p {
 }
 
 .features {
-    display: grid;
-    grid-gap: 1rem;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 3px 22px 18px;
-    justify-items: center;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width:88%;
+    gap: 1%;
 }
 
 .websol_box,
 .photo_box,
 .webdev_box,
 .webdes_box {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-gap: 1rem;
-    grid-template-rows: none none none none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.websol_box p,
+.photo_box p,
+.webdev_box p,
+.webdes_box p {
+    margin-top: -2%;
 }
 
 .features img {
-    width: 50px;
+    width: 60%;
+    margin-top: 10%;
+    margin-bottom: 1%;
 }
 
 #Home,
@@ -204,6 +225,7 @@ p {
     color: red;
 
 }
+
 
 /* ==========================================================================
  3. MODULES
