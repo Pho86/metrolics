@@ -24,23 +24,23 @@
  * https://stackoverflow.com/a/16982510/7133471
  * Customize the background color to match your design. */
 ::-moz-selection {
-    background: #b3d4fc;
-    text-shadow: none;
+  background: #b3d4fc;
+  text-shadow: none;
 }
 
 ::selection {
-    background: #b3d4fc;
-    text-shadow: none;
+  background: #b3d4fc;
+  text-shadow: none;
 }
 
 hr {
-    /* A better looking default horizontal rule */
-    display: block;
-    height: 1px;
-    border: 0;
-    border-top: 1px solid #ccc;
-    margin: 1em 0;
-    padding: 0;
+  /* A better looking default horizontal rule */
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
 }
 
 audio,
@@ -49,20 +49,20 @@ iframe,
 img,
 svg,
 video {
-    /* https://github.com/h5bp/html5-boilerplate/issues/440 */
-    vertical-align: middle;
+  /* https://github.com/h5bp/html5-boilerplate/issues/440 */
+  vertical-align: middle;
 }
 
 fieldset {
-    /* Remove default fieldset styles. */
-    border: 0;
-    margin: 0;
-    padding: 0;
+  /* Remove default fieldset styles. */
+  border: 0;
+  margin: 0;
+  padding: 0;
 }
 
 textarea {
-    /* Allow only vertical resizing of textareas. */
-    resize: vertical;
+  /* Allow only vertical resizing of textareas. */
+  resize: vertical;
 }
 
 /* 1.3 Core Styling */
@@ -73,86 +73,129 @@ h4,
 h5,
 h6,
 p {
-    text-align: center;
+  text-align: center;
 }
-h1, h2, h3, h4, h5, h6 {
-    color:#3b3b3b;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #3b3b3b;
 }
 p {
-    font-size: 13px;
+  font-size: 13px;
 }
-
-
 
 h3 {
-    font-size: larger;
-    font-weight: bold;
+  font-size: larger;
+  font-weight: bold;
 }
 
 p {
-    color: gray;
+  color: gray;
 }
 .section_title h3 {
-    font-size: 30px;
-    position: relative;
-    margin: 2%;
+  font-size: 30px;
+  position: relative;
+  margin: 2%;
 }
 /* ==========================================================================
  2. LAYOUT
  ========================================================================== */
- .header {
-    display: flex;
-    width: 80%;
-    align-items: center;
-    flex-direction: column;
-    padding-right: 50%;
-    padding-left: 10%;
- }
- .header img {
-    width: 100%;
-    height: 60%;
+/* Header */
+
+.logo_img {
+  max-width: 1.5rem;
+  max-height: 1.5rem;
+  padding-left: 1rem;
+}
+.logo_header {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
 }
 
+.navbar {
+  display: flex;
+  flex-direction: row;
+}
 
-.header h1 {
-    text-align: left;
+.nav_item {
+  display: block;
+  position: relative;
+  padding: 4rem 1rem 0rem 0.5rem;
+  line-height: 2rem;
+  font-size: 0.6rem;
+  text-align: left;
+  padding-left: 3%;
+  background-color: rgb(184, 184, 184);
+  background-position-x: center;
+  background-position-y: center;
+  background-size: 2.3rem, 2rem;
+  width: 100%;
+  font-size: 1.3rem;
+  color: white;
+  text-decoration: none;
+  background-repeat: no-repeat;
+}
+.nav_item::after {
+  content: ">";
+  display: inline-block;
+  position: absolute;
+  right: 1rem;
+}
+
+.nav_item.active::after {
+  content: "";
+}
+
+.row {
+  width: 85vw;
+  max-width: 70rem;
+  column-gap: 1.5rem;
+  row-gap: 1.5rem;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  position: relative;
+  left: 10%;
 }
 
 #main {
-    display: grid;
-    min-width: 40rem;
-    max-width: 60rem;
-    justify-items: center;
-    margin: auto;
+  display: grid;
+  min-width: 40rem;
+  max-width: 60rem;
+  justify-items: center;
+  margin: auto;
 }
 
 .features {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    width:88%;
-    gap: 1%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 88%;
+  gap: 1%;
 }
 
 .websol_box,
 .photo_box,
 .webdev_box,
 .webdes_box {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .websol_box p,
 .photo_box p,
 .webdev_box p,
 .webdes_box p {
-    margin-top: -2%;
+  margin-top: -2%;
 }
 
 .features img {
-    width: 60%;
-    margin-top: 10%;
-    margin-bottom: 1%;
+  width: 60%;
+  margin-top: 10%;
+  margin-bottom: 1%;
 }
 
 #Home,
@@ -160,76 +203,125 @@ p {
 #Blog,
 #Portfolio,
 #Home {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 .container {
-    display: grid;
-    justify-content: center;
-    text-align: center;
+  display: grid;
+  justify-content: center;
+  text-align: center;
 }
 
 .recentworks img {
-    width: 250px;
-    height: 250px;
+  width: 250px;
+  height: 250px;
 }
 
 .banner {
-    display: flex;
-    justify-content: center;
-    position: relative;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  background-color: gray;
 }
 .banner img {
-    width: 80%;
-    max-height: 550px;
+  width: 80%;
+  max-height: 550px;
 }
 .banner h3 {
-    position: absolute;
-    display: flex;
-    background-color: white;
-    padding: 1%;
+  position: absolute;
+  display: flex;
+  background-color: white;
+  padding: 1%;
 }
 .banner .Metro {
-    top:30%;
-    left: 20%;
+  top: 30%;
+  left: 20%;
 }
 .banner .Retina {
-    top:40%;
-    left: 20%;
+  top: 40%;
+  left: 20%;
 }
 .banner .Responsive {
-    top:50%;
-    left: 20%;
+  top: 50%;
+  left: 20%;
 }
 
 .sample_images {
-    display: flex;
-    gap: 5%;
-    margin: -5%;
-    position: relative;
-    justify-content: center;
+  display: flex;
+  gap: 5%;
+  margin: -5%;
+  position: relative;
+  justify-content: center;
 }
 
 .sample_image p {
-    position: absolute;
-    top:180%;
-    left:5%;
-    color: white;
+  position: absolute;
+  top: 180%;
+  left: 5%;
+  color: white;
 }
 
 .sample_image #tag {
+  display: flex;
+  top: 200%;
+  color: red;
+}
+
+.panel img {
+    width: 60%;
+    position: relative;
+    padding-top: 20%;
+}
+
+
+.sample_accordians {
+    width: 50%;
+}
+.tabs {
+    width:50%;
+    border: #cbcbcb 1px solid;
+}
+
+.sample_tab_buttons {
     display: flex;
-
-    top:200%;
-    color: red;
-
+    align-items: center;
+    padding: 5px;
+    
+}
+.sample_tab_buttons img {
+    width: 8%;
+    height: 8%;
+}
+.thingsofabove_row {
+    display: flex;
+    gap: 2%;
 }
 
 
 /* ==========================================================================
  3. MODULES
  ========================================================================== */
+.nav_item:nth-child(1) {
+  background-color: #25c389;
+  background-image: url(../img/circle.svg), url(../img/house-user.svg);
+}
+.nav_item:nth-child(2) {
+  background-color: #ffb901;
+  background-image: url(../img/circle.svg), url(../img/network-wired.svg);
+}
+.nav_item:nth-child(3) {
+  background-color: #de6262;
+  background-image: url(../img/circle.svg), url(../img/bullhorn.svg);
+}
+.nav_item:nth-child(4) {
+  background-color: #1691bd;
+  background-image: url(../img/circle.svg), url(../img/briefcase.svg);
+}
+.nav_item:nth-child(5) {
+  background-color: #166ba2;
+  background-image: url(../img/circle.svg), url(../img/envelope.svg);
+}
 /* ==========================================================================
  4. STATES
  ========================================================================== */
@@ -238,7 +330,7 @@ p {
  ========================================================================== */
 /* * Hide visually and from screen readers */
 .hidden {
-    display: none !important;
+  display: none !important;
 }
 
 /* * Hide only visually, but have it available for screen readers:
@@ -248,15 +340,15 @@ p {
 *    causes content to wrap 1 word per line:
 *    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe */
 .visuallyhidden {
-    border: 0;
-    clip: rect(0 0 0 0);
-    height: 1px;
-    margin: -1px;
-    overflow: hidden;
-    padding: 0;
-    position: absolute;
-    width: 1px;
-    white-space: nowrap;
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+  white-space: nowrap;
 }
 
 /* * Extends the .visuallyhidden class to allow the element
@@ -264,141 +356,148 @@ p {
 * https://www.drupal.org/node/897638 */
 .visuallyhidden.focusable:active,
 .visuallyhidden.focusable:focus {
-    clip: auto;
-    height: auto;
-    margin: 0;
-    overflow: visible;
-    position: static;
-    width: auto;
-    white-space: inherit;
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  width: auto;
+  white-space: inherit;
 }
 
 /* * Hide visually and from screen readers, but maintain layout */
 .invisible {
-    visibility: hidden;
+  visibility: hidden;
 }
 
 /* * Clearfix: contain floats
 * http://nicolasgallagher.com/micro-clearfix-hack/ */
 .clearfix:before,
 .clearfix:after {
-    content: " ";
-    display: table;
+  content: " ";
+  display: table;
 }
 
 .clearfix:after {
-    clear: both;
+  clear: both;
 }
 
 @media print,
-(-webkit-min-device-pixel-ratio: 1.25),
-(min-resolution: 1.25dppx),
-(min-resolution: 120dpi) {
-    /* Style adjustments for high resolution devices */
+  (-webkit-min-device-pixel-ratio: 1.25),
+  (min-resolution: 1.25dppx),
+  (min-resolution: 120dpi) {
+  /* Style adjustments for high resolution devices */
 }
 
 /* Accordions */
 .accordion {
-    background-color: #eee;
-    color: #444;
-    cursor: pointer;
-    padding: 18px;
-    width: 100%;
-    text-align: left;
-    border: none;
-    outline: none;
-    transition: 0.4s;
+  background-color: #ffffff;
+  color: #656565;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  text-align: left;
+  transition: 0.6s;
+  border: 1px solid #cbcbcb;
 }
 
 .active,
 .accordion:hover {
-    background-color: #ccc;
+  background-color: #19b2de;
+  color: #fefff0;
+
 }
 
 .panel {
-    padding: 0 18px;
-    background-color: white;
-    display: none;
-    overflow: hidden;
+  padding: 0 5%;
+  background-color: white;
+  overflow: hidden;
+  border: 1px solid #cbcbcb;
+  position: relative;
+  display: none;
+
 }
 
+.panel_text p, .panel_text h2 {
+    text-align: left;
+}
 /* ==========================================================================
  6. PRINT
  https://www.phpied.com/delay-loading-your-print-css/
  ========================================================================== */
 @media print {
-    *,
-    *:before,
-    *:after {
-        background: transparent !important;
-        color: #000 !important;
+  *,
+  *:before,
+  *:after {
+    background: transparent !important;
+    color: #000 !important;
 
-        /* Black prints faster */
-        -webkit-box-shadow: none !important;
-        box-shadow: none !important;
-        text-shadow: none !important;
-    }
+    /* Black prints faster */
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
 
-    a,
-    a:visited {
-        text-decoration: underline;
-    }
+  a,
+  a:visited {
+    text-decoration: underline;
+  }
 
-    a[href]:after {
-        content: " ("attr(href) ")";
-    }
+  a[href]:after {
+    content: " (" attr(href) ")";
+  }
 
-    abbr[title]:after {
-        content: " ("attr(title) ")";
-    }
+  abbr[title]:after {
+    content: " (" attr(title) ")";
+  }
 
-    /* * Don't show links that are fragment identifiers,
+  /* * Don't show links that are fragment identifiers,
    * or use the `javascript:` pseudo protocol */
-    a[href^="#"]:after,
-    a[href^="javascript:"]:after {
-        content: "";
-    }
+  a[href^="#"]:after,
+  a[href^="javascript:"]:after {
+    content: "";
+  }
 
-    pre {
-        white-space: pre-wrap !important;
-    }
+  pre {
+    white-space: pre-wrap !important;
+  }
 
-    pre,
-    blockquote {
-        border: 1px solid #999;
-        page-break-inside: avoid;
-    }
+  pre,
+  blockquote {
+    border: 1px solid #999;
+    page-break-inside: avoid;
+  }
 
-    /* * Printing Tables:
+  /* * Printing Tables:
    * http://css-discuss.incutio.com/wiki/Printing_Tables */
-    thead {
-        display: table-header-group;
-    }
+  thead {
+    display: table-header-group;
+  }
 
-    tr,
-    img {
-        page-break-inside: avoid;
-    }
+  tr,
+  img {
+    page-break-inside: avoid;
+  }
 
-    p,
-    h2,
-    h3 {
-        orphans: 3;
-        widows: 3;
-    }
+  p,
+  h2,
+  h3 {
+    orphans: 3;
+    widows: 3;
+  }
 
-    h2,
-    h3 {
-        page-break-after: avoid;
-    }
+  h2,
+  h3 {
+    page-break-after: avoid;
+  }
 }
 
 /* ==========================================================================
  6. MISC
  ========================================================================== */
 .browserupgrade {
-    margin: 0.2em 0;
-    background: #ccc;
-    color: #000;
-    padding: 0.2em 0;
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
 }
