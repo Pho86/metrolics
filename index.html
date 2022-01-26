@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html class="no-js" lang="">
+<html class="no-js" lang="en">
 
 <head>
     <meta charset="utf-8" />
-    <title></title>
+    <title>Metrolics</title>
     <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta property="og:title" content="" />
@@ -14,7 +14,7 @@
     <link rel="apple-touch-icon" href="icon.png" />
     <!-- Place favicon.ico in the root directory -->
     <link rel="stylesheet" href="css/normalize.css" />
-    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/main1.css" />
     <link rel="stylesheet" href="css/style.css" />
     <meta name="theme-color" content="#fafafa" />
 </head>
@@ -38,9 +38,11 @@
     </header>
     <div class="banner">
         <img class="banner_img" src="img/tile-wide.png" />
-        <h3 class="Metro">Metro Style</h3>
-        <h3 class="Retina">Retina Ready</h3>
-        <h3 class="Responsive">Responsive Design</h3>
+        <ul class="banner_text" style="list-style-type: none;">
+        <li class="Metro">Metro Style</li>
+        <li class="Retina">Retina Ready</li>
+        <li class="Responsive">Responsive Design</li>
+    </ul>
     </div>
     <div id="main">
         <div class="container">
@@ -50,14 +52,15 @@
                     It sports a responsive layout with a mobile layout. </h1>
             </div>
             <!-- / section -->
-            <div class="section_title">
+            <div class="section_title row">
                 <h3>Things That We Do</h3>
                 <p>Ask us what we can do for you</p>
             </div>
         </div>
         <div class="features">
-            <div class="websol_box">
-                <img class="section_image" src="img/tile.png" />
+            <div class="websol_box column">
+                <img class="section_image" src="img/websolutionsicon.png" />
+                <div class="section_text">
                 <h3>Web Solutions</h3>
                 <p>
                     We are a fairly small, flexible design studio that designs for print
@@ -65,17 +68,21 @@
                     Whether you need to create a brand from scratch, including marketing
                     materials. </p>
             </div>
-            <div class="photo_box">
-                <img class="section_image" src="img/tile.png" />
+        </div>
+            <div class="photo_box column">
+                <img class="section_image" src="img/photographyicon.png" />
+                <div class="section_text">
                 <h3>Photography</h3>
                 <p>
                     We are a fairly small, flexible design studio that designs for print
                     and web. We work flexibly with clients to fulfil their design needs.
                     Whether you need to create a brand from scratch, including marketing
                     materials. </p>
+                </div>
             </div>
-            <div class="webdev_box">
-                <img class="section_image" src="img/tile.png" />
+            <div class="webdev_box column">
+                <img class="section_image" src="img/webdevelopmenticon.png" />
+                <div class="section_text">
                 <h3>Web Development</h3>
                 <p>
                     We are a fairly small, flexible design studio that designs for print
@@ -83,81 +90,69 @@
                     Whether you need to create a brand from scratch, including marketing
                     materials. </p>
             </div>
-            <div class="webdes_box">
-                <img class="section_image" src="img/tile.png" />
+        </div>
+            <div class="webdes_box column">
+                <img class="section_image" src="img/webdesignicon.png" />
+                <div class="section_text">
                 <h3>Web Design</h3>
                 <p>
                     We are a fairly small, flexible design studio that designs for print
                     and web. We work flexibly with clients to fulfil their design needs.
                     Whether you need to create a brand from scratch, including marketing
                     materials. </p>
+                </div>
             </div>
         </div>
-        <div class="recentworks">
-            <div class="section_title" style="
-            display: grid;
-            grid-template-columns: 1fr;
-            grid-template-rows: 50px 94px;
-          ">
+        <div class="recentworks column">
+            <div class="section_title">
                 <h2>What's Up Lately?</h2>
-                <p style="grid-area: 2 / 1 / 3 / 2">Read up on our latest work</p>
+                <p>Read up on our latest work</p>
             </div>
-            <div class="sample_images" style="
-            display: grid;
-            grid-template-columns: 1fr 1fr 1fr;
-            grid-template-rows: 0px 98px 16px 0px 223px;
-          ">
+            <div class="sample_images">
                 <div class="sample_image">
-                    <img src="img/tile.png" style="grid-area: 1 / 2 / 2 / 3" />
-                    <p style="grid-area: 2 / 1 / 3 / 2">Photography</p>
-                    <h4 class="sample" style="grid-area: 3 / 1 / 4 / 2">
+                    <img src="img/tile.png">Photography</p>
+                    <h4 class="sample">
                         Sample Image Post </h4>
-                    <p id="tag" style="grid-area: 4 / 1 / 5 / 2">Nov. 2013</p>
+                    <p id="tag">Nov. 2013</p>
                 </div>
                 <div class="sample_image">
-                    <img src="img/tile.png" style="grid-area: 1 / 3 / 2 / 4" />
-                    <p style="grid-area: 2 / 2 / 3 / 3">Photography</p>
-                    <h4 class="sample" style="grid-area: 3 / 2 / 4 / 3">
+                    <img src="img/tile.png">Photography</p>
+                    <h4 class="sample">
                         Sample Image Post </h4>
-                    <p id="tag" style="grid-area: 4 / 2 / 5 / 3">Nov. 2013</p>
+                    <p id="tag">Nov. 2013</p>
                 </div>
                 <div class="sample_image">
-                    <img src="img/tile.png" style="grid-area: 1 / 1 / 2 / 2" />
-                    <p style="grid-area: 2 / 3 / 3 / 4">Photography</p>
-                    <h4 class="sample" style="grid-area: 3 / 3 / 4 / 4">
+                    <img src="img/tile.png">Photography</p>
+                    <h4 class="sample">
                         Sample Image Post </h4>
-                    <p id="tag" style="grid-area: 4 / 3 / 5 / 4">Nov. 2013</p>
+                    <p id="tag">Nov. 2013</p>
                 </div>
             </div>
         </div>
         <div class="latestworks">
-            <div class="section_title" style="
-            display: grid;
-            grid-template-columns: 1fr;
-            grid-template-rows: 51px 83px;
-          ">
+            <div class="section_title">
                 <h2>Our Latest Projects</h2>
                 <p>Client happy? We are happy.</p>
-            </div>
-            <div class="sample_images">
-                <img src="img/tile.png" />
-            </div>
-            <div class="sample_images">
-                <img src="img/tile.png" />
-            </div>
-            <div class="sample_images">
-                <img src="img/tile.png" />
-            </div>
-            <div class="sample_images">
-                <img src="img/tile.png" />
-            </div>
-            <div class="sample_images">
-                <img src="img/tile.png" />
-            </div>
-            <div class="sample_images">
-                <img src="img/tile.png" />
-            </div>
-        </div>
+            </div><div class="row m-col-2 l-col-3">
+                <div class="column span-full">
+                    <h2 class="heading">
+                        Our Latest Projects
+                    </h2>
+                    <p class="heading-tag">
+                        Client happy? We are happy.
+                    </p>
+                </div>
+                <div class="column">
+                    <figure class="projects">
+                        <img src="img/placeholder.svg" alt="placebholder">
+                        <div class="project caption">
+                            <h3 class="project heading">Project title</h3>
+                        </div>
+                    </figure>
+                </div>
+                
+            </div> 
+        </section>
         <div class="thingsofabove">
             <div class="recentworks">
                 <div class="section_title">
@@ -168,12 +163,11 @@
             <div class="thingsofabove_row">
                 <div class="sample_accordians">
                     <button class="accordion active">Sample Accordion Menu 1</button>
-                    <div class="panel"
-                        style="display:grid; grid-template-columns:1fr 2fr;grid-template-rows:100px 100px;">
+                    <div class="panel">
                         <img src="img/icon.png" />
                         <div class="panel_text">
                             <h2>Web Solution</h2>
-                            <p style="grid-area:2 / 2 / 3 / 3;">
+                            <p>
                                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem
                                 facilis dicta, iste nemo inventore delectus commodi, repudiandae
                                 dolor corrupti, quae quisquam tempore! </p>
@@ -181,24 +175,22 @@
 
                     </div>
                     <button class="accordion">Sample Accordion Menu 2</button>
-                    <div class="panel"
-                        style="display:none; grid-template-columns:1fr 2fr;grid-template-rows:100px 100px;">
+                    <div class="panel">
                         <img src="img/icon.png" />
                         <div class="panel_text">
                             <h2>Web Solution</h2>
-                            <p style="grid-area:2 / 2 / 3 / 3;">
+                            <p>
                                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem
                                 facilis dicta, iste nemo inventore delectus commodi, repudiandae
                                 dolor corrupti, quae quisquam tempore! </p>
                         </div>
                     </div>
                     <button class="accordion">Sample Accordion Menu 3</button>
-                    <div class="panel"
-                        style="display:none; grid-template-columns:1fr 2fr;grid-template-rows:100px 100px;">
+                    <div class="panel">
                         <img src="img/icon.png" />
                         <div class="panel_text">
                             <h2>Web Solution</h2>
-                            <p style="grid-area:2 / 2 / 3 / 3;">
+                            <p>
                                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem
                                 facilis dicta, iste nemo inventore delectus commodi, repudiandae
                                 dolor corrupti, quae quisquam tempore! </p>
@@ -248,11 +240,149 @@
                 </div>
             </div>
         </div>
+
         <div class="clients">
-            <img src="img/tile-wide.png" />
+                <div class="column">
+                    <a class="" href="">
+                        <img src="img/placeholder.svg" alt="">
+                    </a>
+                </div>
+                <div class="column">
+                    <a class="" href="">
+                        <img src="img/placeholder.svg" alt="">
+                    </a>
+                </div>
+                <div class="column">
+                    <a class="" href="">
+                        <img src="img/placeholder.svg" alt="">
+                    </a>
+                </div>
+                <div class="column">
+                    <a class="" href="">
+                        <img src="img/placeholder.svg" alt="">
+                    </a>
+                </div>
+                <div class="column">
+                    <a class="" href="">
+                        <img src="img/placeholder.svg" alt="">
         </div>
     </div>
-    <footer class="footer"></footer>
+    <footer class="footer">
+        <div class="row">
+            <div class="column">
+                <figure class="authorimg">
+                    <img src="img/placeholder.svg" alt="">
+                </figure>
+                <div class="subcolumn">
+                    <h3>Peewee Herman</h3>
+                    <p class="whitetext italic">Peewee has over 10 years experience in the industry. He is our Creative Director, digital designer, web designer and front-end developer.
+                    He is also pretty good with a sketch-book. Before starting the company Peewee worked as a designer and studio manager for a design house
+                    who boasted a number of big name clients.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <hr>
+
+        <div class="row">
+            <article class="column">
+                <div class="none">
+                    <div class="subcolumn">
+                        <h5>About Us</h5>
+                        <p class="whitetext">Minions ipsum potatoooo potatoooo uuuhhh.</p>
+                    </div>
+                </div>
+                <div class="subrow">
+                    <figure class="socialicon">
+                        <img src="img/placeholder.svg" alt="">
+                    </figure>
+                    <figure class="socialicon">
+                        <img src="img/placeholder.svg" alt="">
+                    </figure>
+                    <figure class="socialicon">
+                        <img src="img/placeholder.svg" alt="">
+                    </figure>
+                    <figure class="socialicon">
+                        <img src="img/placeholder.svg" alt="">
+                    </figure>
+                    <figure class="socialicon">
+                        <img src="img/placeholder.svg" alt="">
+                    </figure>
+                </div>
+            </article>
+            <article class="column none">
+                <div class="subcolumn">
+                    <h5>Flickr Photos</h5>
+                </div>
+                <div class="subrow">
+                    <figure class="contentimg">
+                        <img src="img/placeholder.svg" alt="">
+                    </figure>
+                    <figure class="contentimg">
+                        <img src="img/placeholder.svg" alt="">
+                    </figure>
+                    <figure class="contentimg">
+                        <img src="img/placeholder.svg" alt="">
+                    </figure>
+                </div>
+                <div class="subrow">
+                    <figure class="contentimg">
+                        <img src="img/placeholder.svg"  alt="">
+                    </figure>
+                    <figure class="contentimg">
+                        <img src="img/placeholder.svg" alt="">
+                    </figure>
+                    <figure class="contentimg">
+                        <img src="img/placeholder.svg" alt="">
+                    </figure>
+                </div>
+            </article>
+            <article class="subcolumn">
+                <div class="subcolumn">
+                    <h5 class="whitetext">Recent Tweets</h5>
+                </div>
+                <div class="tweetrow">
+                    <div class="subcolumn">
+                        <figure class="twiticon">
+                            <img src="img/placeholder.svg">
+                        </figure>
+                    </div>
+                    <p class="whitetext"><b>@Minions</b> - Ipsum potatoooo potatoooo</p>
+                </div>
+                <div class="tweetrow">
+                    <div class="subcolumn">
+                        <figure class="twiticon">
+                            <img src="img/placeholder.svg">
+                        </figure>
+                    </div>
+                    <p class="whitetext"><b>@Minions</b> - Ipsum potatoooo potatoooo</p>
+                </div>
+            </article>
+            <article class="column none">
+                <div class="subcolumn">
+                    <h5>Newsletter</h5>
+                </div>
+                <div class="subcolumn">
+                    <p class="whitetext">
+                        Minions ipsum potatoooo potatoooo uuuhhhh
+                    </p>
+                </div>
+                <div class="subcolumn">
+                    <div class="subcolumn">
+                        <p class="whitetext email">Enter your Email...</p>
+                    </div>
+                    <div class="subcolumn">
+                        <figure class="newsicon">
+                            <img src="filler.jpg" title="" alt="">
+                        </figure>
+                    </div>
+                </div>
+            </article>
+        </div>
+        <div class="footerpic">
+        </div>
+    </footer>
     <script src="js/vendor/modernizr-3.11.2.min.js"></script>
     <script src="js/plugins.js"></script>
     <script src="js/main.js"></script>
