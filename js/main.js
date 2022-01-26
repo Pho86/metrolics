@@ -17,10 +17,10 @@ for (i = 0; i < acc.length; i++) {
   });
 }
 
-function tabOut123(cityName) {
+function tabOut123(tabout) {
    var i;
    var x = document.getElementsByClassName("tabout");
    for (i = 0; i < x.length; i++) {
      x[i].style.display = "none";
    }
-   document.getElementById(cityName).style.display = "block"; }
+   document.getElementById(tabout).style.display = "block"; }
