@@ -4,28 +4,22 @@
 <head>
     <meta charset="utf-8" />
     <title>Metrolics</title>
-    <meta name="description" content="" />
+    <meta name="description"
+        content="Metrolics is a responsive website with a responsive design. It sports a responsive design with a mobile layout." />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta property="og:title" content="" />
-    <meta property="og:type" content="" />
-    <meta property="og:url" content="" />
-    <meta property="og:image" content="" />
-    <link rel="manifest" href="site.webmanifest" />
-    <link rel="apple-touch-icon" href="icon.png" />
-    <!-- Place favicon.ico in the root directory -->
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/main.css" />
     <link rel="stylesheet" href="css/style.css" />
     <meta name="theme-color" content="#fafafa" />
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400&amp;display=swap" rel="stylesheet">
 </head>
 
-<body>
-    <!-- Add your site or application content here -->
+<body class="page home">
     <header class="page_header">
         <div class="row">
             <div class="header_section_title">
                 <div class="logo_header">
-                    <h1 class="heading">Metrolics</h1>
+                    <h1 class="main_heading">Metrolics</h1>
                     <img class="logo_img" src="img/metro.png" alt="metro logo" />
                 </div>
             </div>
@@ -38,19 +32,39 @@
             </nav>
         </div>
     </header>
-    <div class="banner">
-        <img class="banner_img" src="img/tile-wide.png" />
-        <ul class="banner_text" style="list-style-type: none;">
-        <li class="Metro">Metro Style</li>
-        <li class="Retina">Retina Ready</li>
-        <li class="Responsive">Responsive Design</li>
-    </ul>
-    </div>
+    <div class="hero-banner">
+        <div class="slider">
+            <ul class="slider__slides">
+                <li class="slide">
+                    <a href="#" class="slide__link">
+                        <img src="img/banner.png" alt="slider alt" class="slide__img">
+                        <ul class="slide__info">
+                            <li class="slide__info__item">Metro Style</li>
+                            <li class="slide__info__item">Retina Ready</li>
+                            <li class="slide__info__item">Responsive Design</li>
+                        </ul>
+                    </a>
+                </li>
+                <!-- slide -->
+                <li class="slide">
+                    <a href="#" class="slide__link">
+                        <img src="img/banner.png" alt="slider alt" class="slide__img">
+                        <ul class="slide__info">
+                            <li class="slide__info__item">Metro Style</li>
+                            <li class="slide__info__item">Retina Ready</li>
+                            <li class="slide__info__item">Responsive Design</li>
+                        </ul>
+                    </a>
+                </li> <!-- slide -->
+            </ul><!-- slides -->
+        </div><!-- slider -->
+    </div><!-- hero-area -->
+
     <div id="main">
         <div class="container">
             <div class="top_container">
                 <h1>
-                    Hey guys! This is the <span style="color: #50bbe3"> Metrolics </span> theme. 
+                    Hey guys! This is the <span style="color: #50bbe3"> Metrolics </span> theme.
                     It sports a responsive layout with a mobile layout. </h1>
             </div>
             <!-- / section -->
@@ -62,74 +76,89 @@
         <div class="features">
             <div class="websol_box column">
                 <!-- Webfonts + padding-->
-                <img class="section_image" src="img/websolutionsicon.png" alt="web solutions"/>
+                <img class="section_image" src="img/websolutionsicon.png" alt="web solutions" />
                 <div class="section_text">
-                <h3>Web Solutions</h3>
-                <p>
-                    We are a fairly small, flexible design studio that designs for print
-                    and web. We work flexibly with clients to fulfil their design needs.
-                    Whether you need to create a brand from scratch, including marketing
-                    materials. </p>
+                    <h3>Web Solutions</h3>
+                    <p>
+                        We are a fairly small, flexible design studio that designs for print
+                        and web. We work flexibly with clients to fulfil their design needs.
+                        Whether you need to create a brand from scratch, including marketing
+                        materials. </p>
+                </div>
             </div>
-        </div>
             <div class="photo_box column">
+                <!-- class structure needs to be improved -->
                 <img class="section_image" src="img/photographyicon.png" alt="photography" />
                 <div class="section_text">
-                <h3>Photography</h3>
-                <p>
-                    We are a fairly small, flexible design studio that designs for print
-                    and web. We work flexibly with clients to fulfil their design needs.
-                    Whether you need to create a brand from scratch, including marketing
-                    materials. </p>
+                    <h3>Photography</h3>
+                    <p>
+                        We are a fairly small, flexible design studio that designs for print
+                        and web. We work flexibly with clients to fulfil their design needs.
+                        Whether you need to create a brand from scratch, including marketing
+                        materials. </p>
                 </div>
             </div>
             <div class="webdev_box column">
                 <img class="section_image" src="img/webdevelopmenticon.png" alt="web development" />
                 <div class="section_text">
-                <h3>Web Development</h3>
-                <p>
-                    We are a fairly small, flexible design studio that designs for print
-                    and web. We work flexibly with clients to fulfil their design needs.
-                    Whether you need to create a brand from scratch, including marketing
-                    materials. </p>
+                    <h3>Web Development</h3>
+                    <!-- h3 needs class selectors -->
+                    <p>
+                        We are a fairly small, flexible design studio that designs for print
+                        and web. We work flexibly with clients to fulfil their design needs.
+                        Whether you need to create a brand from scratch, including marketing
+                        materials. </p>
+                </div>
             </div>
-        </div>
             <div class="webdes_box column">
                 <img class="section_image" src="img/webdesignicon.png" alt="web design" />
                 <div class="section_text">
-                <h3>Web Design</h3>
-                <p>
-                    We are a fairly small, flexible design studio that designs for print
-                    and web. We work flexibly with clients to fulfil their design needs.
-                    Whether you need to create a brand from scratch, including marketing
-                    materials. </p>
+                    <h3>Web Design</h3>
+                    <p>
+                        We are a fairly small, flexible design studio that designs for print
+                        and web. We work flexibly with clients to fulfil their design needs.
+                        Whether you need to create a brand from scratch, including marketing
+                        materials. </p>
                 </div>
             </div>
         </div>
         <div class="recentworks column">
             <div class="section_title">
                 <h2>What's Up Lately?</h2>
+                <!-- needs class selector ^^ -->
                 <p>Read up on our latest work</p>
             </div>
             <div class="sample_images">
                 <div class="sample_image">
-                    <img src="img/tile.png">Photography</p>
+                    <img src="img/tile.png" alt="Photography">Photography
                     <!--Position:relative-->
                     <h4 class="sample">
                         Sample Image Post </h4>
-                    <p id="tag">Nov. 2013</p>
+                    <span class="date">
+                        <span class="date day">29</span>
+                        <span class="date month">Nov</span>
+                        <span class="date year">2013</span>
+                    </span>
                 </div>
                 <div class="sample_image">
-                    <img src="img/tile.png">Photography</p>
+                    <img src="img/tile.png" alt="Photography">Photography
                     <h4 class="sample">
                         Sample Image Post </h4>
-                    <p id="tag">Nov. 2013</p>
+                    <span class="date">
+                        <span class="date day">29</span>
+                        <span class="date month">Nov</span>
+                        <span class="date year">2013</span>
+                    </span>
                 </div>
                 <div class="sample_image">
-                    <img src="img/tile.png">Photography</p>
+                    <img src="img/tile.png" alt="Photography">Photography
                     <h4 class="sample">
                         Sample Image Post </h4>
-                    <p id="tag">Nov. 2013</p>
+                    <span class="date">
+                        <span class="date day">29</span>
+                        <span class="date month">Nov</span>
+                        <span class="date year">2013</span>
+                    </span>
                 </div>
             </div>
         </div>
@@ -138,57 +167,57 @@
                 <h2>Our Latest Projects</h2>
                 <p>Client happy? We are happy.</p>
             </div>
-                <div class="column">
-                    <figure class="projects">
-                        <img src="img/placeholder.svg" alt="project">
-                        <div class="project caption">
-                            <h3 class="project heading">Sample Image Post</h3>
-                        </div>
-                    </figure>
-                </div>
-                <div class="column">
-                    <figure class="projects">
-                        <img src="img/placeholder.svg" alt="project">
-                        <div class="project caption">
-                            <h3 class="project heading">Sample Image Post</h3>
-                        </div>
-                    </figure>
-                </div>
-                <div class="column">
-                    <figure class="projects">
-                        <img src="img/placeholder.svg" alt="project">
-                        <div class="project caption">
-                            <h3 class="project heading">Sample Image Post</h3>
-                        </div>
-                    </figure>
-                </div>
-                <div class="column">
-                    <figure class="projects">
-                        <img src="img/placeholder.svg" alt="project">
-                        <div class="project caption">
-                            <h3 class="project heading">Sample Image Post</h3>
-                        </div>
-                    </figure>
-                </div>
-                <div class="column">
-                    <figure class="projects">
-                        <img src="img/placeholder.svg" alt="project">
-                        <div class="project caption">
-                            <h3 class="project heading">Sample Image Post</h3>
-                        </div>
-                    </figure>
-                </div>
-                <div class="column">
-                    <figure class="projects">
-                        <img src="img/placeholder.svg" alt="project">
-                        <div class="project caption">
-                            <h3 class="project heading">Sample Image Post</h3>
-                        </div>
-                    </figure>
-                </div>
-                
-            </div> 
-        </section>
+            <div class="column">
+                <figure class="projects">
+                    <!-- class structure needs to be improved -->
+                    <img src="img/placeholder.svg" alt="project">
+                    <div class="project caption">
+                        <h3 class="project heading">Sample Image Post</h3>
+                    </div>
+                </figure>
+            </div>
+            <div class="column">
+                <figure class="projects">
+                    <img src="img/placeholder.svg" alt="project">
+                    <div class="project caption">
+                        <h3 class="project heading">Sample Image Post</h3>
+                    </div>
+                </figure>
+            </div>
+            <div class="column">
+                <figure class="projects">
+                    <img src="img/placeholder.svg" alt="project">
+                    <div class="project caption">
+                        <h3 class="project heading">Sample Image Post</h3>
+                    </div>
+                </figure>
+            </div>
+            <div class="column">
+                <figure class="projects">
+                    <img src="img/placeholder.svg" alt="project">
+                    <div class="project caption">
+                        <h3 class="project heading">Sample Image Post</h3>
+                    </div>
+                </figure>
+            </div>
+            <div class="column">
+                <figure class="projects">
+                    <img src="img/placeholder.svg" alt="project">
+                    <div class="project caption">
+                        <h3 class="project heading">Sample Image Post</h3>
+                    </div>
+                </figure>
+            </div>
+            <div class="column">
+                <figure class="projects">
+                    <img src="img/placeholder.svg" alt="project">
+                    <div class="project caption">
+                        <h3 class="project heading">Sample Image Post</h3>
+                    </div>
+                </figure>
+            </div>
+
+        </div>
         <div class="thingsofabove">
             <div class="recentworks">
                 <div class="section_title">
@@ -200,9 +229,10 @@
                 <div class="sample_accordians">
                     <button class="accordion active">Sample Accordion Menu 1</button>
                     <div class="panel">
-                        <img src="img/icon.png" />
+                        <img src="img/websolutionsicon.png" alt="web solution" />
                         <div class="panel_text">
                             <h2>Web Solution</h2>
+                            <!-- needs class selectors for all web solutions-->
                             <p>
                                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem
                                 facilis dicta, iste nemo inventore delectus commodi, repudiandae
@@ -212,9 +242,9 @@
                     </div>
                     <button class="accordion">Sample Accordion Menu 2</button>
                     <div class="panel">
-                        <img src="img/icon.png" />
+                        <img src="img/webdevelopmenticon.png" alt="web development" />
                         <div class="panel_text">
-                            <h2>Web Solution</h2>
+                            <h2>Web Development</h2>
                             <p>
                                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem
                                 facilis dicta, iste nemo inventore delectus commodi, repudiandae
@@ -223,9 +253,9 @@
                     </div>
                     <button class="accordion">Sample Accordion Menu 3</button>
                     <div class="panel">
-                        <img src="img/icon.png" />
+                        <img src="img/webdesignicon.png" alt="web design" />
                         <div class="panel_text">
-                            <h2>Web Solution</h2>
+                            <h2>Web Design</h2>
                             <p>
                                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem
                                 facilis dicta, iste nemo inventore delectus commodi, repudiandae
@@ -245,88 +275,88 @@
                     </button>
                     <div id="tab1" class="tabout">
                         <div class="sample_tab_buttons">
-                            <img src="img/icon.png" />
+                            <img src="img/Bottle.png" alt="Lab Bottle" />
                             <p>
                                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                                 Voluptatem placeat assumenda perspiciatis aspernatur.
                                 Consectetur veniam sit, assumenda aliquid. </p>
                         </div>
                         <div class="sample_tab_buttons">
-                            <img src="img/icon.png" />
+                            <img src="img/Leaf.png" alt="Leaf" />
                             <p>
                                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                                 Voluptatem placeat assumenda perspiciatis aspernatur.
                                 Consectetur veniam sit, assumenda aliquid. </p>
                         </div>
                         <div class="sample_tab_buttons">
-                            <img src="img/icon.png" />
+                            <img src="img/Computer.png" alt="Computer" />
                             <p>
                                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                                 Voluptatem placeat assumenda perspiciatis aspernatur.
                                 Consectetur veniam sit, assumenda aliquid. </p>
                         </div>
                         <div class="sample_tab_buttons">
-                            <img src="img/icon.png" />
-                            <p>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                Voluptatem placeat assumenda perspiciatis aspernatur.
-                                Consectetur veniam sit, assumenda aliquid. </p>
-                        </div>
-                    </div>
-                    <div id="tab2" class="tabout">
-                        <div class="sample_tab_buttons">
-                            <img src="img/icon.png" />
-                            <p>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                Voluptatem placeat assumenda perspiciatis aspernatur.
-                                Consectetur veniam sit, assumenda aliquid. </p>
-                        </div>
-                        <div class="sample_tab_buttons">
-                            <img src="img/icon.png" />
-                            <p>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                Voluptatem placeat assumenda perspiciatis aspernatur.
-                                Consectetur veniam sit, assumenda aliquid. </p>
-                        </div>
-                        <div class="sample_tab_buttons">
-                            <img src="img/icon.png" />
-                            <p>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                Voluptatem placeat assumenda perspiciatis aspernatur.
-                                Consectetur veniam sit, assumenda aliquid. </p>
-                        </div>
-                        <div class="sample_tab_buttons">
-                            <img src="img/icon.png" />
+                            <img src="img/group-of-people.png" alt="Group of People" />
                             <p>
                                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                                 Voluptatem placeat assumenda perspiciatis aspernatur.
                                 Consectetur veniam sit, assumenda aliquid. </p>
                         </div>
                     </div>
-                    <div id="tab3" class="tabout">
+                    <div id="tab2" class="tabout none">
                         <div class="sample_tab_buttons">
-                            <img src="img/icon.png" />
+                            <img src="img/Bottle.png" alt="Lab Bottle" />
                             <p>
                                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                                 Voluptatem placeat assumenda perspiciatis aspernatur.
                                 Consectetur veniam sit, assumenda aliquid. </p>
                         </div>
                         <div class="sample_tab_buttons">
-                            <img src="img/icon.png" />
+                            <img src="img/Leaf.png" alt="Leaf" />
                             <p>
                                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                                 Voluptatem placeat assumenda perspiciatis aspernatur.
                                 Consectetur veniam sit, assumenda aliquid. </p>
                         </div>
                         <div class="sample_tab_buttons">
-                            <img src="img/icon.png" />
+                            <img src="img/Computer.png" alt="Computer" />
                             <p>
                                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                                 Voluptatem placeat assumenda perspiciatis aspernatur.
                                 Consectetur veniam sit, assumenda aliquid. </p>
                         </div>
                         <div class="sample_tab_buttons">
-                            <img src="img/icon.png" />
+                            <img src="img/group-of-people.png" alt="Group of People" />
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Voluptatem placeat assumenda perspiciatis aspernatur.
+                                Consectetur veniam sit, assumenda aliquid. </p>
+                        </div>
+                    </div>
+                    <div id="tab3" class="tabout none">
+                        <div class="sample_tab_buttons">
+                            <img src="img/Bottle.png" alt="Lab Bottle" />
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Voluptatem placeat assumenda perspiciatis aspernatur.
+                                Consectetur veniam sit, assumenda aliquid. </p>
+                        </div>
+                        <div class="sample_tab_buttons">
+                            <img src="img/Leaf.png" alt="Leaf" />
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Voluptatem placeat assumenda perspiciatis aspernatur.
+                                Consectetur veniam sit, assumenda aliquid. </p>
+                        </div>
+                        <div class="sample_tab_buttons">
+                            <img src="img/Computer.png" alt="Computer" />
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Voluptatem placeat assumenda perspiciatis aspernatur.
+                                Consectetur veniam sit, assumenda aliquid. </p>
+                        </div>
+                        <div class="sample_tab_buttons">
+                            <img src="img/group-of-people.png" alt="Group of People" />
                             <p>
                                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                                 Voluptatem placeat assumenda perspiciatis aspernatur.
@@ -336,35 +366,36 @@
                 </div>
             </div>
         </div>
+    </div>
 
-        <div class="clients">
-                <div class="column">
-                    <a class="netbeans" href="">
-                        <img src="img/NetBeans.png" alt="Net Beans">
-                    </a>
-                </div>
-                <div class="column">
-                    <a class="krita" href="">
-                        <img src="img/krita.jpg" alt="Krita">
-                    </a>
-                </div>
-                <div class="column">
-                    <a class="scirra" href="">
-                        <img src="img/Scirra.jpg" alt="Scirra">
-                    </a>
-                </div>
-                <div class="column">
-                    <a class="blender" href="">
-                        <img src="img/blender.jpg" alt="Blender">
-                    </a>
-                </div>
-                <div class="column">
-                    <a class="inkscape" href="">
-                        <img src="img/inkscape.jpg" alt="Inkscape">
-                    </a>
+    <div class="clients">
+        <div class="column">
+            <a class="netbeans" href="">
+                <img src="img/NetBeans.png" alt="Net Beans">
+            </a>
+        </div>
+        <div class="column">
+            <a class="krita" href="">
+                <img src="img/krita.jpg" alt="Krita">
+            </a>
+        </div>
+        <div class="column">
+            <a class="scirra" href="">
+                <img src="img/Scirra.jpg" alt="Scirra">
+            </a>
+        </div>
+        <div class="column">
+            <a class="blender" href="">
+                <img src="img/blender.jpg" alt="Blender">
+            </a>
+        </div>
+        <div class="column">
+            <a class="inkscape" href="">
+                <img src="img/inkscape.jpg" alt="Inkscape">
+            </a>
         </div>
     </div>
-    <footer class="footer">
+    <footer class="page__footer">
         <div class="row">
             <div class="column">
                 <figure class="authorimg">
@@ -373,9 +404,11 @@
                 </figure>
                 <div class="subcolumn">
                     <h3>Peewee Herman</h3>
-                    <p class="whitetext"><i>Peewee has over 10 years experience in the industry. He is our Creative Director, digital designer, web designer and front-end developer.
-                    He is also pretty good with a sketch-book. Before starting the company Peewee worked as a designer and studio manager for a design house
-                    who boasted a number of big name clients.</i>
+                    <p class="whitetext"><i>Peewee has over 10 years experience in the industry. He is our Creative
+                            Director, digital designer, web designer and front-end developer.
+                            He is also pretty good with a sketch-book. Before starting the company Peewee worked as
+                            a designer and studio manager for a design house
+                            who boasted a number of big name clients.</i>
                     </p>
                 </div>
             </div>
@@ -426,7 +459,7 @@
                 </div>
                 <div class="subrow">
                     <div class="contentimg">
-                        <img src="img/placeholder.svg"  alt="">
+                        <img src="img/placeholder.svg" alt="">
                     </div>
                     <div class="contentimg">
                         <img src="img/placeholder.svg" alt="">
@@ -443,7 +476,7 @@
                 <div class="tweetrow">
                     <div class="subcolumn">
                         <figure class="twittericon">
-                            <img src="img/placeholder.svg">
+                            <img src="img/placeholder.svg" alt="twitter icon">
                         </figure>
                     </div>
                     <p class="whitetext"><b>@Minions</b> - Ipsum potatoooo potatoooo</p>
@@ -451,7 +484,7 @@
                 <div class="tweetrow">
                     <div class="subcolumn">
                         <figure class="twittericon">
-                            <img src="img/placeholder.svg">
+                            <img src="img/placeholder.svg" alt="twitter icon">
                         </figure>
                     </div>
                     <p class="whitetext"><b>@Minions</b> - Ipsum potatoooo potatoooo</p>
@@ -463,19 +496,21 @@
                 </div>
                 <div class="subcolumn">
                     <p class="whitetext">
-                        Minions ipsum potatoooo potatoooo uuuhhhh. Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse beatae accusantium magni aliquam! Ducimus magnam error excepturi voluptate, cumque, molestias vitae reiciendis.
+                        Minions ipsum potatoooo potatoooo uuuhhhh. Lorem ipsum dolor sit amet consectetur
+                        adipisicing elit. Esse beatae accusantium magni aliquam! Ducimus magnam error excepturi
+                        voluptate, cumque, molestias vitae reiciendis.
                     </p>
                 </div>
                 <div class="subcolumn">
                     <div class="subcolumn">
-                        <input class="email">Enter your Email...</p>
+                        <input class="email">Enter your Email...>
                         <button></button>
-                    </div>
                     </div>
                 </div>
             </div>
         </div>
     </footer>
+
     <script src="js/vendor/modernizr-3.11.2.min.js"></script>
     <script src="js/plugins.js"></script>
     <script src="js/main.js"></script>

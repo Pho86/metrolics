@@ -23,4 +23,4 @@ function tabOut123(tabout) {
    for (i = 0; i < x.length; i++) {
      x[i].style.display = "none";
    }
-   document.getElementById(tabout).style.display = "block"; }
+   document.getElementById(tabout).style.display = "grid"; }
