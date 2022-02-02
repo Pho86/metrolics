@@ -121,6 +121,12 @@
         max-height: 2.5rem;
     }
 
+    .main-nav {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+    }
+
     /* Small only */
     @media screen and (max-width: 39.9375em) {
         
@@ -177,6 +183,23 @@
 
         }
 
+        .main-nav {
+            display: flex;
+            flex-direction: row;
+        }
+
+        .main-nav_item {
+            padding: 4rem 1rem 0rem 0.5rem;
+            line-height: 2rem;
+            font-size: 0.8rem;
+            text-align: left;
+            background-color: rgb(184, 184, 184);
+            background-repeat: no-repeat;
+            background-position-x: center;
+            background-position-y: center;
+            background-size: 2.3rem 1.4rem;
+
+        }
 
     }
 
@@ -217,6 +240,11 @@
         .l-hide {
             
             display: none;
+        }
+
+        .main-nav {
+            display: flex;
+            flex-direction: row;
         }
 
     }
