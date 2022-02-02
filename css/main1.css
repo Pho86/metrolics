@@ -283,6 +283,29 @@
         color: white;
     }
 
+    /* main nav coloours and icons */
+
+    .main-nav_item:nth-child(1){
+        background-color: #25c389;
+        background-image: url(../img/circle.svg), url(../img/house-user.svg);
+    }
+    .main-nav_item:nth-child(2){
+        background-color: #ffb901;
+        background-image: url(../img/circle.svg), url(../img/network-wired.svg);
+    }
+    .main-nav_item:nth-child(3){
+        background-color: #de6262;
+        background-image: url(../img/circle.svg), url(../img/bullhorn.svg);
+    }
+    .main-nav_item:nth-child(4){
+        background-color: #1691bd;
+        background-image: url(../img/circle.svg), url(../img/briefcase.svg);
+    }
+    .main-nav_item:nth-child(5){
+        background-color: #166ba2;
+        background-image: url(../img/circle.svg), url(../img/envelope.svg);
+    }
+
   
   /*
    * Hide visually and from screen readers
