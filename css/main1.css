@@ -96,18 +96,30 @@
     /* ==========================================================================
      Layout
      ========================================================================== */
-    .heading {
+    
+    
+     .heading {
         text-align: center;
     }
 
-    
+    .row {
+        display: grid;
+    }
+
     /* Small only */
-    @media screen and (max-width: 39.9375em) {}
+    @media screen and (max-width: 39.9375em) {
+        
+        .s-hide{
+            display: none;
+        }
+
+    }
+    
+    
     /* Medium and up */
     @media screen and (min-width: 40em) {
         
         .row{
-            display: grid;
             width: 85vw;
             max-width: 70rem;
             margin: 0 auto;
@@ -129,6 +141,10 @@
             grid-template-columns: repeat(6, 1fr);
         }
 
+        .m-1-2 {
+            grid-template-columns: 1fr 2fr;
+        }
+
         .span-full {
             grid-column-start: 1;
             grid-column-end: -1;
@@ -142,36 +158,52 @@
     /* Medium only */
     @media screen and (min-width: 40em) and 
     (max-width: 63.9375em) {  
+
+        .m-hide {
+            display: none;
+        }
         
         .special-project {
             grid-column-start: 1;
             grid-column-end: -1;
         }
 
-}
-/* Large and up */
-@media screen and (min-width: 64em) {
+    }
+    /* Large and up */
+    @media screen and (min-width: 64em) {
 
-    .l-col-2 {
-        grid-template-columns: repeat(2, 1fr);
-    }
-    .l-col-3 {
-        grid-template-columns: repeat(3, 1fr);
-    }
-    .l-col-4 {
-        grid-template-columns: repeat(4, 1fr);
-    }
-    .l-col-5 {
-        grid-template-columns: repeat(5, 1fr);
-    }
-    .l-col-6 {
-        grid-template-columns: repeat(6, 1fr);
-    }
+        .l-col-2 {
+            grid-template-columns: repeat(2, 1fr);
+        }
+        .l-col-3 {
+            grid-template-columns: repeat(3, 1fr);
+        }
+        .l-col-4 {
+            grid-template-columns: repeat(4, 1fr);
+        }
+        .l-col-5 {
+            grid-template-columns: repeat(5, 1fr);
+        }
+        .l-col-6 {
+            grid-template-columns: repeat(6, 1fr);
+        }
 
-}
-/* Large only */
-@media screen and (min-width: 64em) and 
-(max-width: 74.9375em) {}
+        .l-hide {
+            
+            display: none;
+        }
+
+    }
+    /* Large only */
+    @media screen and (min-width: 64em) and 
+    (max-width: 74.9375em) {
+
+            .l-hide {
+            
+                display: none;
+            }
+
+    }
 
 
     /* ==========================================================================
@@ -190,6 +222,7 @@
     }
     .page_footer {
         background-color: #16242f;
+        color: white;
     }
 
   
