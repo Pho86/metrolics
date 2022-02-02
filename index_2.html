@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <title>Metrolics</title>
-  <meta name="description" content="EN">
+  <meta name="description" content="Metrolics is a website with a responsive layout.">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <meta property="og:title" content="Some Demo website">
@@ -16,8 +16,9 @@
   <link rel="apple-touch-icon" href="icon.png">
   <!-- Place favicon.ico in the root directory -->
 
- <!-- <link rel="stylesheet" href="css/normalize.css"> -->
+  <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/main1.css">
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400&amp;display=swap" rel="stylesheet">
 
   <meta name="theme-color" content="#fafafa">
 </head>
@@ -29,10 +30,10 @@
         Mobile
       </nav>
       <div class="column">
-          <p>Logo Here</p>
+        <p>Logo Here</p>
       </div>
       <div class="column main-nav">
-          <p>Menu Here</p>
+        <p>Menu Here</p>
       </div>
     </div>
   </header>
@@ -203,10 +204,114 @@
         </h2>
       </div>
       <div class="column">
-        <p>GUI Element here</p>
+        <div class="accordion_menu">
+          <div class="accordion_menu_outer">
+            <div class="accordion_menu_item_title a_title" id="accordionTitle1" onClick="openInner(1)">
+              Sample Accordion Menu
+              <span class="accordion_menu_button" id="accordionStatus1">+</span>
+            </div>
+            <div class="accordion_menu_span">
+              <div class="accordion_menu_inner t_title" id="accordionContent1">
+                <div class="accordion_menu_inner_content">
+                  <img src="img/lightbulb.png">
+                  <div class="accordion_menu_text">
+                    <div class="accordion_menu_item">Web Solutions</div>
+                    <div>
+                      We are a fairly small, flexible design studio that designs for print and web. We
+                      work flexibly with clients to fulfil their design needs. Whether you need to
+                      create a brand from scratch, including marketing materials.
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="accordion_menu_item_title a_title" id="accordionTitle2" onClick="openInner(2)">
+              Sample Accordion Menu 2
+              <span class="accordion_menu_button" id="accordionStatus2">+</span>
+            </div>
+            <div class="accordion_menu_span">
+              <div class="accordion_menu_inner t_title" id="accordionContent2">
+                <div class="accordion_menu_inner_content">
+                  <img src="img/lightbulb.png">
+                  <div class="accordion_menu_text">
+                    <div class="accordion_menu_item">Web Solutions</div>
+                    <div>
+                      We are a fairly small, flexible design studio that designs for print and web. We
+                      work flexibly with clients to fulfil their design needs. Whether you need to
+                      create a brand from scratch, including marketing materials.
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="accordion_menu_item_title a_title" id="accordionTitle3" onClick="openInner(3)">
+              Sample Accordion Menu 3
+              <span class="accordion_menu_button" id="accordionStatus3">+</span>
+            </div>
+            <div class="accordion_menu_span">
+              <div class="accordion_menu_inner t_title" id="accordionContent3">
+                <div class="accordion_menu_inner_content">
+                  <img src="img/lightbulb.png">
+                  <div class="accordion_menu_text">
+                    <div class="accordion_menu_item">Web Solutions</div>
+                    <div>
+                      We are a fairly small, flexible design studio that designs for print and web. We
+                      work flexibly with clients to fulfil their design needs. Whether you need to
+                      create a brand from scratch, including marketing materials.
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--menu div ends-->
       </div>
       <div class="column">
-        <p>GUI Element here</p>>
+
+        <div class="page_menu">
+          <div class="menu_tab_outer">
+            <ul>
+              <li id="tab1" onClick="tabOut(1)">
+                Tab1
+              </li>
+              <li id="tab2" onClick="tabOut(2)">
+                Tab2
+              </li>
+              <li id="tab3" onClick="tabOut(3)">
+                Tab3
+              </li>
+            </ul>
+          </div>
+          <ul class="menu_tab_inner">
+            <li>
+              We are a fairly small, flexible design studio that designs for print and web. We work flexibly with
+              clients to fulfil their design needs. Whether you need to create a brand from scratch, including marketing
+              materials.
+
+            </li>
+            <li>
+              We are a fairly small, flexible design studio that designs for print and web. We work flexibly with
+              clients to fulfil their design needs. Whether you need to create a brand from scratch, including marketing
+              materials.
+
+            </li>
+            <li>
+              We are a fairly small, flexible design studio that designs for print and web. We work flexibly with
+              clients to fulfil their design needs. Whether you need to create a brand from scratch, including marketing
+              materials.
+
+            </li>
+            <li>
+              We are a fairly small, flexible design studio that designs for print and web. We work flexibly with
+              clients to fulfil their design needs. Whether you need to create a brand from scratch, including marketing
+              materials.
+
+            </li>
+          </ul>
+
+        </div>
+        <!--tab menu ends-->
       </div>
     </div>
   </section>
@@ -238,10 +343,10 @@
           Pewee Herman Intro
         </h3>
         <p><i>Peewee has over 10 years experience in the industry. He is our Creative
-          Director, digital designer, web designer and front-end developer.
-          He is also pretty good with a sketch-book. Before starting the company Peewee worked as
-          a designer and studio manager for a design house
-          who boasted a number of big name clients.</i></p>
+            Director, digital designer, web designer and front-end developer.
+            He is also pretty good with a sketch-book. Before starting the company Peewee worked as
+            a designer and studio manager for a design house
+            who boasted a number of big name clients.</i></p>
       </div>
       <div class="column s-hide">
         <h4>About Us</h4>
