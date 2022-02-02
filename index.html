@@ -1,532 +1,490 @@
-<!DOCTYPE html>
-<html class="no-js" lang="en">
+<!doctype html>
+<html class="no-js" lang="EN">
 
 <head>
-    <meta charset="utf-8" />
-    <title>Metrolics</title>
-    <meta name="description"
-        content="Metrolics is a responsive website with a responsive design. It sports a responsive design with a mobile layout." />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="css/normalize.css" />
-    <link rel="stylesheet" href="css/main.css" />
-    <link rel="stylesheet" href="css/style.css" />
-    <meta name="theme-color" content="#fafafa" />
-    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400&amp;display=swap" rel="stylesheet">
+  <meta charset="utf-8">
+  <title>Metrolics</title>
+  <meta name="description" content="EN">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta property="og:title" content="Some Demo website">
+  <meta property="og:type" content="">
+  <meta property="og:url" content="">
+  <meta property="og:image" content="">
+
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="apple-touch-icon" href="icon.png">
+  <!-- Place favicon.ico in the root directory -->
+
+ <!-- <link rel="stylesheet" href="css/normalize.css"> -->
+ <!-- <link rel="stylesheet" href="css/main1.css"> -->
+
+  <meta name="theme-color" content="#fafafa">
 </head>
 
-<body class="page home">
-    <header class="page_header">
-        <div class="row">
-            <div class="header_section_title">
-                <div class="logo_header">
-                    <h1 class="main_heading">Metrolics</h1>
-                    <img class="logo_img" src="img/metro.png" alt="metro logo" />
-                </div>
-            </div>
-            <nav class="navbar">
-                <a href="" class="nav_item active">home</a>
-                <a href="" class="nav_item">pages</a>
-                <a href="" class="nav_item">blog</a>
-                <a href="" class="nav_item">portfolio</a>
-                <a href="" class="nav_item">contact</a>
-            </nav>
-        </div>
-    </header>
-    <div class="hero-banner">
-        <div class="slider">
-            <ul class="slider__slides">
-                <li class="slide">
-                    <a href="#" class="slide__link">
-                        <img src="img/banner.png" alt="slider alt" class="slide__img">
-                        <ul class="slide__info">
-                            <li class="slide__info__item">Metro Style</li>
-                            <li class="slide__info__item">Retina Ready</li>
-                            <li class="slide__info__item">Responsive Design</li>
-                        </ul>
-                    </a>
-                </li>
-                <!-- slide -->
-                <li class="slide">
-                    <a href="#" class="slide__link">
-                        <img src="img/banner.png" alt="slider alt" class="slide__img">
-                        <ul class="slide__info">
-                            <li class="slide__info__item">Metro Style</li>
-                            <li class="slide__info__item">Retina Ready</li>
-                            <li class="slide__info__item">Responsive Design</li>
-                        </ul>
-                    </a>
-                </li> <!-- slide -->
-            </ul><!-- slides -->
-        </div><!-- slider -->
-    </div><!-- hero-area -->
+<body class="page page-home">
+  <header class="page_header">
+    <div class="row"></div>
+  </header>
 
-    <div id="main">
-        <div class="container">
-            <div class="top_container">
-                <h1>
-                    Hey guys! This is the <span style="color: #50bbe3"> Metrolics </span> theme.
-                    It sports a responsive layout with a mobile layout. </h1>
-            </div>
-            <!-- / section -->
-            <div class="section_title row">
-                <h3>Things That We Do</h3>
-                <p>Ask us what we can do for you</p>
-            </div>
-        </div>
-        <div class="features">
-            <div class="websol_box column">
-                <!-- Webfonts + padding-->
-                <img class="section_image" src="img/websolutionsicon.png" alt="web solutions" />
-                <div class="section_text">
-                    <h3>Web Solutions</h3>
-                    <p>
-                        We are a fairly small, flexible design studio that designs for print
-                        and web. We work flexibly with clients to fulfil their design needs.
-                        Whether you need to create a brand from scratch, including marketing
-                        materials. </p>
-                </div>
-            </div>
-            <div class="photo_box column">
-                <!-- class structure needs to be improved -->
-                <img class="section_image" src="img/photographyicon.png" alt="photography" />
-                <div class="section_text">
-                    <h3>Photography</h3>
-                    <p>
-                        We are a fairly small, flexible design studio that designs for print
-                        and web. We work flexibly with clients to fulfil their design needs.
-                        Whether you need to create a brand from scratch, including marketing
-                        materials. </p>
-                </div>
-            </div>
-            <div class="webdev_box column">
-                <img class="section_image" src="img/webdevelopmenticon.png" alt="web development" />
-                <div class="section_text">
-                    <h3>Web Development</h3>
-                    <!-- h3 needs class selectors -->
-                    <p>
-                        We are a fairly small, flexible design studio that designs for print
-                        and web. We work flexibly with clients to fulfil their design needs.
-                        Whether you need to create a brand from scratch, including marketing
-                        materials. </p>
-                </div>
-            </div>
-            <div class="webdes_box column">
-                <img class="section_image" src="img/webdesignicon.png" alt="web design" />
-                <div class="section_text">
-                    <h3>Web Design</h3>
-                    <p>
-                        We are a fairly small, flexible design studio that designs for print
-                        and web. We work flexibly with clients to fulfil their design needs.
-                        Whether you need to create a brand from scratch, including marketing
-                        materials. </p>
-                </div>
-            </div>
-        </div>
-        <div class="recentworks column">
-            <div class="section_title">
-                <h2>What's Up Lately?</h2>
-                <!-- needs class selector ^^ -->
-                <p>Read up on our latest work</p>
-            </div>
-            <div class="sample_images">
-                <div class="sample_image">
-                    <img src="img/tile.png" alt="Photography">Photography
-                    <!--Position:relative-->
-                    <h4 class="sample">
-                        Sample Image Post </h4>
-                    <span class="date">
-                        <span class="date day">29</span>
-                        <span class="date month">Nov</span>
-                        <span class="date year">2013</span>
-                    </span>
-                </div>
-                <div class="sample_image">
-                    <img src="img/tile.png" alt="Photography">Photography
-                    <h4 class="sample">
-                        Sample Image Post </h4>
-                    <span class="date">
-                        <span class="date day">29</span>
-                        <span class="date month">Nov</span>
-                        <span class="date year">2013</span>
-                    </span>
-                </div>
-                <div class="sample_image">
-                    <img src="img/tile.png" alt="Photography">Photography
-                    <h4 class="sample">
-                        Sample Image Post </h4>
-                    <span class="date">
-                        <span class="date day">29</span>
-                        <span class="date month">Nov</span>
-                        <span class="date year">2013</span>
-                    </span>
-                </div>
-            </div>
-        </div>
-        <div class="latestworks">
-            <div class="section_title">
-                <h2>Our Latest Projects</h2>
-                <p>Client happy? We are happy.</p>
-            </div>
-            <div class="column">
-                <figure class="projects">
-                    <!-- class structure needs to be improved -->
-                    <img src="img/placeholder.svg" alt="project">
-                    <div class="project caption">
-                        <h3 class="project heading">Sample Image Post</h3>
-                    </div>
-                </figure>
-            </div>
-            <div class="column">
-                <figure class="projects">
-                    <img src="img/placeholder.svg" alt="project">
-                    <div class="project caption">
-                        <h3 class="project heading">Sample Image Post</h3>
-                    </div>
-                </figure>
-            </div>
-            <div class="column">
-                <figure class="projects">
-                    <img src="img/placeholder.svg" alt="project">
-                    <div class="project caption">
-                        <h3 class="project heading">Sample Image Post</h3>
-                    </div>
-                </figure>
-            </div>
-            <div class="column">
-                <figure class="projects">
-                    <img src="img/placeholder.svg" alt="project">
-                    <div class="project caption">
-                        <h3 class="project heading">Sample Image Post</h3>
-                    </div>
-                </figure>
-            </div>
-            <div class="column">
-                <figure class="projects">
-                    <img src="img/placeholder.svg" alt="project">
-                    <div class="project caption">
-                        <h3 class="project heading">Sample Image Post</h3>
-                    </div>
-                </figure>
-            </div>
-            <div class="column">
-                <figure class="projects">
-                    <img src="img/placeholder.svg" alt="project">
-                    <div class="project caption">
-                        <h3 class="project heading">Sample Image Post</h3>
-                    </div>
-                </figure>
-            </div>
-
-        </div>
-        <div class="thingsofabove">
-            <div class="recentworks">
-                <div class="section_title">
-                    <h2>Thingsofabove</h2>
-                    <p>Misc stuff we could not put anywhere else.</p>
-                </div>
-            </div>
-            <div class="thingsofabove_row">
-                <div class="sample_accordians">
-                    <button class="accordion active">Sample Accordion Menu 1</button>
-                    <div class="panel">
-                        <img src="img/websolutionsicon.png" alt="web solution" />
-                        <div class="panel_text">
-                            <h2>Web Solution</h2>
-                            <!-- needs class selectors for all web solutions-->
-                            <p>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem
-                                facilis dicta, iste nemo inventore delectus commodi, repudiandae
-                                dolor corrupti, quae quisquam tempore! </p>
-                        </div>
-
-                    </div>
-                    <button class="accordion">Sample Accordion Menu 2</button>
-                    <div class="panel">
-                        <img src="img/webdevelopmenticon.png" alt="web development" />
-                        <div class="panel_text">
-                            <h2>Web Development</h2>
-                            <p>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem
-                                facilis dicta, iste nemo inventore delectus commodi, repudiandae
-                                dolor corrupti, quae quisquam tempore! </p>
-                        </div>
-                    </div>
-                    <button class="accordion">Sample Accordion Menu 3</button>
-                    <div class="panel">
-                        <img src="img/webdesignicon.png" alt="web design" />
-                        <div class="panel_text">
-                            <h2>Web Design</h2>
-                            <p>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem
-                                facilis dicta, iste nemo inventore delectus commodi, repudiandae
-                                dolor corrupti, quae quisquam tempore! </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="tabs">
-                    <button class="tab_button" onclick="tabOut123('tab1')">
-                        Tab 1
-                    </button>
-                    <button class="tab_button" onclick="tabOut123('tab2')">
-                        Tab 2
-                    </button>
-                    <button class="tab_button" onclick="tabOut123('tab3')">
-                        Tab 3
-                    </button>
-                    <div id="tab1" class="tabout">
-                        <div class="sample_tab_buttons">
-                            <img src="img/Bottle.png" alt="Lab Bottle" />
-                            <p>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                Voluptatem placeat assumenda perspiciatis aspernatur.
-                                Consectetur veniam sit, assumenda aliquid. </p>
-                        </div>
-                        <div class="sample_tab_buttons">
-                            <img src="img/Leaf.png" alt="Leaf" />
-                            <p>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                Voluptatem placeat assumenda perspiciatis aspernatur.
-                                Consectetur veniam sit, assumenda aliquid. </p>
-                        </div>
-                        <div class="sample_tab_buttons">
-                            <img src="img/Computer.png" alt="Computer" />
-                            <p>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                Voluptatem placeat assumenda perspiciatis aspernatur.
-                                Consectetur veniam sit, assumenda aliquid. </p>
-                        </div>
-                        <div class="sample_tab_buttons">
-                            <img src="img/group-of-people.png" alt="Group of People" />
-                            <p>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                Voluptatem placeat assumenda perspiciatis aspernatur.
-                                Consectetur veniam sit, assumenda aliquid. </p>
-                        </div>
-                    </div>
-                    <div id="tab2" class="tabout none">
-                        <div class="sample_tab_buttons">
-                            <img src="img/Bottle.png" alt="Lab Bottle" />
-                            <p>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                Voluptatem placeat assumenda perspiciatis aspernatur.
-                                Consectetur veniam sit, assumenda aliquid. </p>
-                        </div>
-                        <div class="sample_tab_buttons">
-                            <img src="img/Leaf.png" alt="Leaf" />
-                            <p>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                Voluptatem placeat assumenda perspiciatis aspernatur.
-                                Consectetur veniam sit, assumenda aliquid. </p>
-                        </div>
-                        <div class="sample_tab_buttons">
-                            <img src="img/Computer.png" alt="Computer" />
-                            <p>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                Voluptatem placeat assumenda perspiciatis aspernatur.
-                                Consectetur veniam sit, assumenda aliquid. </p>
-                        </div>
-                        <div class="sample_tab_buttons">
-                            <img src="img/group-of-people.png" alt="Group of People" />
-                            <p>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                Voluptatem placeat assumenda perspiciatis aspernatur.
-                                Consectetur veniam sit, assumenda aliquid. </p>
-                        </div>
-                    </div>
-                    <div id="tab3" class="tabout none">
-                        <div class="sample_tab_buttons">
-                            <img src="img/Bottle.png" alt="Lab Bottle" />
-                            <p>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                Voluptatem placeat assumenda perspiciatis aspernatur.
-                                Consectetur veniam sit, assumenda aliquid. </p>
-                        </div>
-                        <div class="sample_tab_buttons">
-                            <img src="img/Leaf.png" alt="Leaf" />
-                            <p>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                Voluptatem placeat assumenda perspiciatis aspernatur.
-                                Consectetur veniam sit, assumenda aliquid. </p>
-                        </div>
-                        <div class="sample_tab_buttons">
-                            <img src="img/Computer.png" alt="Computer" />
-                            <p>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                Voluptatem placeat assumenda perspiciatis aspernatur.
-                                Consectetur veniam sit, assumenda aliquid. </p>
-                        </div>
-                        <div class="sample_tab_buttons">
-                            <img src="img/group-of-people.png" alt="Group of People" />
-                            <p>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                Voluptatem placeat assumenda perspiciatis aspernatur.
-                                Consectetur veniam sit, assumenda aliquid. </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+  <div class="page_slider">
+    <div class="row">
+      <div class="column">
+        <img src="img/placeholder.svg" alt="slider placeholder">
+      </div>
     </div>
+  </div>
 
-    <div class="clients">
-        <div class="column">
-            <a class="netbeans" href="">
-                <img src="img/NetBeans.png" alt="Net Beans">
-            </a>
-        </div>
-        <div class="column">
-            <a class="krita" href="">
-                <img src="img/krita.jpg" alt="Krita">
-            </a>
-        </div>
-        <div class="column">
-            <a class="scirra" href="">
-                <img src="img/Scirra.jpg" alt="Scirra">
-            </a>
-        </div>
-        <div class="column">
-            <a class="blender" href="">
-                <img src="img/blender.jpg" alt="Blender">
-            </a>
-        </div>
-        <div class="column">
-            <a class="inkscape" href="">
-                <img src="img/inkscape.jpg" alt="Inkscape">
-            </a>
-        </div>
+  <div class="page_intro">
+    <div class="row">
+      <h1 class="heading">
+        Hey Guys! Main intro heading here!<br>
+        It is a responsive layout.
+      </h1>
     </div>
-    <footer class="page__footer">
-        <div class="row">
-            <div class="column">
-                <figure class="authorimg">
-                    <!--rounded borders = 50%;-->
-                    <img src="img/placeholder.svg" alt="Authour Photo">
-                </figure>
-                <div class="subcolumn">
-                    <h3>Peewee Herman</h3>
-                    <p class="whitetext"><i>Peewee has over 10 years experience in the industry. He is our Creative
-                            Director, digital designer, web designer and front-end developer.
-                            He is also pretty good with a sketch-book. Before starting the company Peewee worked as
-                            a designer and studio manager for a design house
-                            who boasted a number of big name clients.</i>
-                    </p>
-                </div>
-            </div>
-        </div>
+  </div>
 
-        <hr>
+  <section class="about">
+    <div class="row">
+      <div class="column">
+        <h2 class="heading">
+          Things that we do!
+        </h2>
+      </div>
+      <div class="column">
+        <h3 class="heading">subheading</h3>
+      </div>
+      <div class="column">
+        <h3 class="heading">subheading</h3>
+      </div>
+      <div class="column">
+        <h3 class="heading">subheading</h3>
+      </div>
+      <div class="column">
+        <h3 class="heading">subheading</h3>
+      </div>
+    </div>
+  </section>
 
-        <div class="row">
-            <div class="column">
-                <div class="none">
-                    <div class="subcolumn">
-                        <h5>About Us</h5>
-                        <p class="whitetext">Minions ipsum potatoooo potatoooo uuuhhh.</p>
-                    </div>
-                </div>
-                <div class="subrow">
-                    <div class="socialicon">
-                        <img src="img/placeholder.svg" alt="Facebook">
-                    </div>
-                    <div class="socialicon">
-                        <img src="img/placeholder.svg" alt="Google+">
-                    </div>
-                    <div class="socialicon">
-                        <img src="img/placeholder.svg" alt="Twitter">
-                    </div>
-                    <div class="socialicon">
-                        <img src="img/placeholder.svg" alt="Instagram">
-                    </div>
-                    <div class="socialicon">
-                        <img src="img/placeholder.svg" alt="Share">
-                    </div>
-                </div>
-            </div>
-            <div class="column">
-                <div class="subcolumn">
-                    <h5>Flickr Photos</h5>
-                </div>
-                <div class="subrow">
-                    <div class="contentimg">
-                        <img src="img/placeholder.svg" alt="">
-                    </div>
-                    <div class="contentimg">
-                        <img src="img/placeholder.svg" alt="">
-                    </div>
-                    <div class="contentimg">
-                        <img src="img/placeholder.svg" alt="">
-                    </div>
-                </div>
-                <div class="subrow">
-                    <div class="contentimg">
-                        <img src="img/placeholder.svg" alt="">
-                    </div>
-                    <div class="contentimg">
-                        <img src="img/placeholder.svg" alt="">
-                    </div>
-                    <div class="contentimg">
-                        <img src="img/placeholder.svg" alt="">
-                    </div>
-                </div>
-            </div>
-            <div class="subcolumn">
-                <div class="subcolumn">
-                    <h5 class="whitetext">Recent Tweets</h5>
-                </div>
-                <div class="tweetrow">
-                    <div class="subcolumn">
-                        <figure class="twittericon">
-                            <img src="img/placeholder.svg" alt="twitter icon">
-                        </figure>
-                    </div>
-                    <p class="whitetext"><b>@Minions</b> - Ipsum potatoooo potatoooo</p>
-                </div>
-                <div class="tweetrow">
-                    <div class="subcolumn">
-                        <figure class="twittericon">
-                            <img src="img/placeholder.svg" alt="twitter icon">
-                        </figure>
-                    </div>
-                    <p class="whitetext"><b>@Minions</b> - Ipsum potatoooo potatoooo</p>
-                </div>
-            </div>
-            <div class="column">
-                <div class="subcolumn">
-                    <h3>Newsletter</h3>
-                </div>
-                <div class="subcolumn">
-                    <p class="whitetext">
-                        Minions ipsum potatoooo potatoooo uuuhhhh. Lorem ipsum dolor sit amet consectetur
-                        adipisicing elit. Esse beatae accusantium magni aliquam! Ducimus magnam error excepturi
-                        voluptate, cumque, molestias vitae reiciendis.
-                    </p>
-                </div>
-                <div class="subcolumn">
-                    <div class="subcolumn">
-                        <input class="email">Enter your Email...>
-                        <button></button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </footer>
+  <section class="projects--new">
+    <div class="row">
+      <div class="column">
+        <h2 class="heading">
+          Whats Up Lately?
+        </h2>
+      </div>
+      <div class="column">
+        <figure class="project">
+          <img src="img/placeholder.svg" alt="placeholder">
+          <figcaption class="project_caption">
+            <h3 class="heading">project title</h3>
+          </figcaption>
+        </figure>
+      </div> <!-- peoject col ends here -->
+      <div class="column">
+        <figure class="project">
+          <img src="img/placeholder.svg" alt="placeholder">
+          <figcaption class="project_caption">
+            <h3 class="heading">project title</h3>
+          </figcaption>
+        </figure>
+      </div> <!-- peoject col ends here -->
+      <div class="column">
+        <figure class="project">
+          <img src="img/placeholder.svg" alt="placeholder">
+          <figcaption class="project_caption">
+            <h3 class="heading">project title</h3>
+          </figcaption>
+        </figure>
+      </div> <!-- peoject col ends here -->
+    </div>
+  </section> <!-- projects-new ends here-->
 
-    <script src="js/vendor/modernizr-3.11.2.min.js"></script>
-    <script src="js/plugins.js"></script>
-    <script src="js/main.js"></script>
-    <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
-    <script>
-        window.ga = function () {
-            ga.q.push(arguments);
-        };
-        ga.q = [];
-        ga.l = +new Date();
-        ga("create", "UA-XXXXX-Y", "auto");
-        ga("set", "anonymizeIp", true);
-        ga("set", "transport", "beacon");
-        ga("send", "pageview");
-    </script>
-    <script src="https://www.google-analytics.com/analytics.js" async></script>
+  <section class="projects">
+    <div class="row">
+      <div class="column">
+        <h2 class="heading">
+          Our Latest Projects
+        </h2>
+      </div>
+      <div class="column">
+        <figure class="project">
+          <img src="img/placeholder.svg" alt="placeholder">
+          <figcaption class="project_caption">
+            <h3 class="heading">project title</h3>
+          </figcaption>
+        </figure>
+      </div> <!-- peoject col ends here -->
+      <div class="column">
+        <figure class="project">
+          <img src="img/placeholder.svg" alt="placeholder">
+          <figcaption class="project_caption">
+            <h3 class="heading">project title</h3>
+          </figcaption>
+        </figure>
+      </div> <!-- peoject col ends here -->
+      <div class="column">
+        <figure class="project">
+          <img src="img/placeholder.svg" alt="placeholder">
+          <figcaption class="project_caption">
+            <h3 class="heading">project title</h3>
+          </figcaption>
+        </figure>
+      </div> <!-- peoject col ends here -->
+      <div class="column">
+        <figure class="project">
+          <img src="img/placeholder.svg" alt="placeholder">
+          <figcaption class="project_caption">
+            <h3 class="heading">project title</h3>
+          </figcaption>
+        </figure>
+      </div> <!-- peoject col ends here -->
+      <div class="column">
+        <figure class="project">
+          <img src="img/placeholder.svg" alt="placeholder">
+          <figcaption class="project_caption">
+            <h3 class="heading">project title</h3>
+          </figcaption>
+        </figure>
+      </div> <!-- peoject col ends here -->
+      <div class="column">
+        <figure class="project">
+          <img src="img/placeholder.svg" alt="placeholder">
+          <figcaption class="project_caption">
+            <h3 class="heading">project title</h3>
+          </figcaption>
+        </figure>
+      </div> <!-- peoject col ends here -->
+    </div>
+  </section> <!-- projects-new ends here-->
+
+  <section class="thingsofabove">
+    <div class="row">
+      <div class="column">
+        <h2 class="heading">
+          thingsofabove
+        </h2>
+      </div>
+      <div class="column">
+        <p>GUI Element here</p>
+      </div>
+      <div class="column">
+        <p>GUI Element here</p>>
+      </div>
+    </div>
+  </section>
+
+  <div class="sponsors">
+    <div class="row">
+      <div class="column">
+        <img src="img/placeholder.svg" alt="placeholder">
+      </div>
+      <div class="column">
+        <img src="img/placeholder.svg" alt="placeholder">
+      </div>
+      <div class="column">
+        <img src="img/placeholder.svg" alt="placeholder">
+      </div>
+      <div class="column">
+        <img src="img/placeholder.svg" alt="placeholder">
+      </div>
+      <div class="column">
+        <img src="img/placeholder.svg" alt="placeholder">
+      </div>
+    </div>
+  </div>
+
+  <footer class="page_footer">
+    <div class="row">
+      <div class="page_footer_intro column ">
+        <h3 class="heading">
+          Pewee Herman Intro
+        </h3>
+      </div>
+      <div class="column">
+        <h4>footer subheading</h4>
+      </div>
+      <div class="column">
+        <h4>footer subheading</h4>
+      </div>
+      <div class="column">
+        <h4>footer subheading</h4>
+      </div>
+      <div class="column">
+        <h4>footer subheading</h4>
+      </div>
+      <div class="column">
+        <h4>footer subheading</h4>
+      </div>
+    </div>
+  </footer>
+
+
+
+
+
+  <script src="js/vendor/modernizr-3.11.2.min.js"></script>
+  <script src="js/plugins.js"></script>
+  <script src="js/main.js"></script>
+
+  <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+  <script>
+    window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
+    ga('create', 'UA-XXXXX-Y', 'auto'); ga('set', 'anonymizeIp', true); ga('set', 'transport', 'beacon'); ga('send', 'pageview')
+  </script>
+  <script src="https://www.google-analytics.com/analytics.js" async></script>
 </body>
 
 </html>
+
+<!doctype html>
+<html class="no-js" lang="EN">
+
+<head>
+  <meta charset="utf-8">
+  <title>Metrolics</title>
+
+Expand
+message.txt8 KB
+﻿
+
+<!doctype html>
+<html class="no-js" lang="EN">
+
+<head>
+  <meta charset="utf-8">
+  <title>Metrolics</title>
+  <meta name="description" content="EN">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta property="og:title" content="Some Demo website">
+  <meta property="og:type" content="">
+  <meta property="og:url" content="">
+  <meta property="og:image" content="">
+
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="apple-touch-icon" href="icon.png">
+  <!-- Place favicon.ico in the root directory -->
+
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/main.css">
+
+  <meta name="theme-color" content="#fafafa">
+</head>
+
+<body class="page page-home">
+  <header class="page_header">
+    <div class="row"></div>
+  </header>
+
+  <div class="page_slider">
+    <div class="row">
+      <div class="column">
+        <img src="img/placeholder.svg" alt="slider placeholder">
+      </div>
+    </div>
+  </div>
+
+  <div class="page_intro">
+    <div class="row">
+      <h1 class="heading">
+        Hey Guys! Main intro heading here!<br>
+        It is a responsive layout.
+      </h1>
+    </div>
+  </div>
+
+  <section class="about">
+    <div class="row">
+      <div class="column">
+        <h2 class="heading">
+          Things that we do!
+        </h2>
+      </div>
+      <div class="column">
+        <h3 class="heading">subheading</h3>
+      </div>
+      <div class="column">
+        <h3 class="heading">subheading</h3>
+      </div>
+      <div class="column">
+        <h3 class="heading">subheading</h3>
+      </div>
+      <div class="column">
+        <h3 class="heading">subheading</h3>
+      </div>
+    </div>
+  </section>
+
+  <section class="projects--new">
+    <div class="row">
+      <div class="column">
+        <h2 class="heading">
+          Whats Up Lately?
+        </h2>
+      </div>
+      <div class="column">
+        <figure class="project">
+          <img src="img/placeholder.svg" alt="placeholder">
+          <figcaption class="project_caption">
+            <h3 class="heading">project title</h3>
+          </figcaption>
+        </figure>
+      </div> <!-- peoject col ends here -->
+      <div class="column">
+        <figure class="project">
+          <img src="img/placeholder.svg" alt="placeholder">
+          <figcaption class="project_caption">
+            <h3 class="heading">project title</h3>
+          </figcaption>
+        </figure>
+      </div> <!-- peoject col ends here -->
+      <div class="column">
+        <figure class="project">
+          <img src="img/placeholder.svg" alt="placeholder">
+          <figcaption class="project_caption">
+            <h3 class="heading">project title</h3>
+          </figcaption>
+        </figure>
+      </div> <!-- peoject col ends here -->
+    </div>
+  </section> <!-- projects-new ends here-->
+
+  <section class="projects">
+    <div class="row">
+      <div class="column">
+        <h2 class="heading">
+          Our Latest Projects
+        </h2>
+      </div>
+      <div class="column">
+        <figure class="project">
+          <img src="img/placeholder.svg" alt="placeholder">
+          <figcaption class="project_caption">
+            <h3 class="heading">project title</h3>
+          </figcaption>
+        </figure>
+      </div> <!-- peoject col ends here -->
+      <div class="column">
+        <figure class="project">
+          <img src="img/placeholder.svg" alt="placeholder">
+          <figcaption class="project_caption">
+            <h3 class="heading">project title</h3>
+          </figcaption>
+        </figure>
+      </div> <!-- peoject col ends here -->
+      <div class="column">
+        <figure class="project">
+          <img src="img/placeholder.svg" alt="placeholder">
+          <figcaption class="project_caption">
+            <h3 class="heading">project title</h3>
+          </figcaption>
+        </figure>
+      </div> <!-- peoject col ends here -->
+      <div class="column">
+        <figure class="project">
+          <img src="img/placeholder.svg" alt="placeholder">
+          <figcaption class="project_caption">
+            <h3 class="heading">project title</h3>
+          </figcaption>
+        </figure>
+      </div> <!-- peoject col ends here -->
+      <div class="column">
+        <figure class="project">
+          <img src="img/placeholder.svg" alt="placeholder">
+          <figcaption class="project_caption">
+            <h3 class="heading">project title</h3>
+          </figcaption>
+        </figure>
+      </div> <!-- peoject col ends here -->
+      <div class="column">
+        <figure class="project">
+          <img src="img/placeholder.svg" alt="placeholder">
+          <figcaption class="project_caption">
+            <h3 class="heading">project title</h3>
+          </figcaption>
+        </figure>
+      </div> <!-- peoject col ends here -->
+    </div>
+  </section> <!-- projects-new ends here-->
+
+  <section class="thingsofabove">
+    <div class="row">
+      <div class="column">
+        <h2 class="heading">
+          thingsofabove
+        </h2>
+      </div>
+      <div class="column">
+        <p>GUI Element here</p>
+      </div>
+      <div class="column">
+        <p>GUI Element here</p>>
+      </div>
+    </div>
+  </section>
+
+  <div class="sponsors">
+    <div class="row">
+      <div class="column">
+        <img src="img/placeholder.svg" alt="placeholder">
+      </div>
+      <div class="column">
+        <img src="img/placeholder.svg" alt="placeholder">
+      </div>
+      <div class="column">
+        <img src="img/placeholder.svg" alt="placeholder">
+      </div>
+      <div class="column">
+        <img src="img/placeholder.svg" alt="placeholder">
+      </div>
+      <div class="column">
+        <img src="img/placeholder.svg" alt="placeholder">
+      </div>
+    </div>
+  </div>
+
+  <footer class="page_footer">
+    <div class="row">
+      <div class="page_footer_intro column ">
+        <h3 class="heading">
+          Pewee Herman Intro
+        </h3>
+      </div>
+      <div class="column">
+        <h4>footer subheading</h4>
+      </div>
+      <div class="column">
+        <h4>footer subheading</h4>
+      </div>
+      <div class="column">
+        <h4>footer subheading</h4>
+      </div>
+      <div class="column">
+        <h4>footer subheading</h4>
+      </div>
+      <div class="column">
+        <h4>footer subheading</h4>
+      </div>
+    </div>
+  </footer>
+
+
+
+
+
+  <script src="js/vendor/modernizr-3.11.2.min.js"></script>
+  <script src="js/plugins.js"></script>
+  <script src="js/main.js"></script>
+
+  <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+  <script>
+    window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
+    ga('create', 'UA-XXXXX-Y', 'auto'); ga('set', 'anonymizeIp', true); ga('set', 'transport', 'beacon'); ga('send', 'pageview')
+  </script>
+  <script src="https://www.google-analytics.com/analytics.js" async></script>
+</body>
+
+</html>
+
+message.txt8 KB
