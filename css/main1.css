@@ -143,7 +143,10 @@
     @media screen and (min-width: 40em) and 
     (max-width: 63.9375em) {  
         
-
+        .special-project {
+            grid-column-start: 1;
+            grid-column-end: -1;
+        }
 
 }
 /* Large and up */
@@ -181,6 +184,14 @@
     /* ==========================================================================
      Theme
      ========================================================================== */
+
+    .page_slider {
+        background-color: #ebebeb;
+    }
+    .page_footer {
+        background-color: #16242f;
+    }
+
   
   /*
    * Hide visually and from screen readers
