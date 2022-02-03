@@ -227,12 +227,16 @@ p {
     text-decoration: none;
     background-repeat: no-repeat;
   }
+  a.main-nav_item {
+    padding-left: 15px;
+    padding-bottom: 5px;;
+  }
 
   .main-nav_item::after {
     content: ">";
     display: inline-block;
     position: absolute;
-    right: 1rem;
+    right: 1.1rem;
   }
 
   .main-nav_item.active::after {
