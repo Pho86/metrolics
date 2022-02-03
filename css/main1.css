@@ -132,6 +132,24 @@
         align-items: center;
     }
 
+    .main-nav_item {
+        display: block;
+        position: relative;
+        width: 100%;
+        font-size: 1.3rem;
+        text-decoration: none;
+        text-align: left;
+        color: white;
+        line-height: 4rem;
+        background-repeat: no-repeat;
+    }
+
+    .main-nav_item::after {
+        content: ">";
+        display: inline-block;
+        position: absolute;
+        right: 1rem;
+    }
 
     /* Small only */
     @media screen and (max-width: 39.9375em) {
@@ -206,7 +224,6 @@
             font-size: 0.8rem;
             text-align: left;
             background-color: rgb(184, 184, 184);
-            background-repeat: no-repeat;
             background-position-x: center;
             background-position-y: center;
             background-size: 2.3rem 1.4rem;
@@ -321,6 +338,29 @@
       border-bottom: 1px solid red;
       line-height: 2rem;
     }
+    /* main nav coloours and icons */
+
+    .main-nav_item:nth-child(1){
+        background-color: #25c389;
+        background-image: url(../img/circle.svg), url(../img/house-user.svg);
+    }
+    .main-nav_item:nth-child(2){
+        background-color: #ffb901;
+        background-image: url(../img/circle.svg), url(../img/network-wired.svg);
+    }
+    .main-nav_item:nth-child(3){
+        background-color: #de6262;
+        background-image: url(../img/circle.svg), url(../img/bullhorn.svg);
+    }
+    .main-nav_item:nth-child(4){
+        background-color: #1691bd;
+        background-image: url(../img/circle.svg), url(../img/briefcase.svg);
+    }
+    .main-nav_item:nth-child(5){
+        background-color: #166ba2;
+        background-image: url(../img/circle.svg), url(../img/envelope.svg);
+    }
+
   
     .blueLine {
       border-bottom: 1px solid blue;
