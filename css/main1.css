@@ -166,6 +166,8 @@ p {
   }
   .metrolics_logo {
     padding-left: 5%;
+    justify-content: flex-start;
+    top: 0rem;
   }
 }
 
