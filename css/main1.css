@@ -165,7 +165,14 @@
       list-style-type: none;
     }
     
-
+    .logoGrid {
+      display: grid; 
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr; 
+      grid-template-rows: 1fr; 
+      gap: 0px 0.1rem; 
+      width: 12rem; 
+      height: 200px; 
+    }
 
 
 
