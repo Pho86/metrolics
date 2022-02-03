@@ -144,6 +144,9 @@
         color: white;
         line-height: 4rem;
         background-repeat: no-repeat;
+        background-position-x: 44%;
+        background-position-y: center;
+        background-size: 3.1rem, 1.7rem;
     }
 
     .main-nav_item::after {
