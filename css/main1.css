@@ -307,7 +307,25 @@
       color: white;
     }
 
+    .greenLine {
+      border-bottom: 1px solid green;
+      line-height: 2rem;
+    }
+
+    .yellowLine {
+      border-bottom: 1px solid yellow;
+      line-height: 2rem;
+    }
+
+    .redLine {
+      border-bottom: 1px solid red;
+      line-height: 2rem;
+    }
   
+    .blueLine {
+      border-bottom: 1px solid blue;
+      line-height: 2rem;
+    }
   /*
    * Hide visually and from screen readers
    */
