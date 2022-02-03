@@ -151,6 +151,24 @@
         right: 1rem;
     }
 
+    .inputBox {
+      background-color: orange;
+      font-size: 1rem;
+      resize: none;
+      margin: 0%;
+      padding-top: 15px;
+
+    }
+
+
+    li {
+      list-style-type: none;
+    }
+    
+
+
+
+
     /* Small only */
     @media screen and (max-width: 39.9375em) {
         
@@ -316,7 +334,7 @@
       background-image: url(../img/bj_colorbar.png);
       background-repeat: no-repeat;
       background-position: bottom right;
-      padding-bottom: 2rem;
+      padding-bottom: 6rem;
     }
 
 
