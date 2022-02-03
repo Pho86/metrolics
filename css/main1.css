@@ -111,6 +111,10 @@
         row-gap: 1rem;
     }
 
+    .column {
+        position: relative; 
+    }
+
     .heading {
         font-family: Ubuntu, Verdana, Geneva, Tahoma, sans-serif;
         font-weight: 400;
@@ -119,12 +123,13 @@
 
     .logo {
         max-height: 2.5rem;
+        position: absolute;
+        bottom: 0;
     }
 
     .main-nav {
-        display: none;
+        display: flex;
         flex-direction: column;
-        align-items: center;
     }
 
     .main-nav_item {
@@ -146,6 +151,10 @@
         right: 1rem;
     }
 
+    .main-nav_item.active::after {
+        content:""; 
+    }
+
     /* Small only */
     @media screen and (max-width: 39.9375em) {
         
@@ -159,6 +168,7 @@
 
         .logo {
             max-height: 3rem;
+            position: static;
         }
 
     }
