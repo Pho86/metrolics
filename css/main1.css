@@ -111,6 +111,7 @@ p {
   row-gap: 1rem;
 }
 
+
 .column {
   position: relative;
 }
@@ -499,6 +500,10 @@ p {
   .main-nav {
     display: flex;
     flex-direction: row;
+  }
+
+  .main-nav_item {
+    padding: 6rem 3.5rem 0rem 0rem;
   }
 }
 /* Large only */
