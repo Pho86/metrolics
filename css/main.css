@@ -1,28 +1,35 @@
-/* ==========================================================================
-    [Table of contents]
+/*! HTML5 Boilerplate v8.0.0 | MIT License | https://html5boilerplate.com/ */
 
-    1. BASE
-        1.1 Page Rendering Defaults
-        1.2 User Experience Adjustments
-        1.3 Core Styling
-    2. LAYOUT
-    3. MODULES
-    4. STATES
-    5. UTILITIES
-    6. PRINT
-    7. MISC
+/* main.css 2.1.0 | MIT License | https://github.com/h5bp/main.css#readme */
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
 
-    ========================================================================== */
 /* ==========================================================================
-    1. BASE
-    ========================================================================== */
-/* 1.1 Page Rendering Defaults */
-/* 1.2 User Experience Adjustments */
-/* * Remove text-shadow in selection highlight:
- * https://twitter.com/miketaylr/status/12228805301
- * Vendor-prefixed and regular ::selection selectors cannot be combined:
- * https://stackoverflow.com/a/16982510/7133471
- * Customize the background color to match your design. */
+   BASE
+   ========================================================================== */
+
+html {
+  color: #222;
+
+  font-family: "Ubuntu", sans-serif;
+
+  font-size: 1em;
+  line-height: 1.4;
+}
+
+/*
+   * Remove text-shadow in selection highlight:
+   * https://twitter.com/miketaylr/status/12228805301
+   *
+   * Vendor-prefixed and regular ::selection selectors cannot be combined:
+   * https://stackoverflow.com/a/16982510/7133471
+   *
+   * Customize the background color to match your design.
+   */
+
 ::-moz-selection {
   background: #b3d4fc;
   text-shadow: none;
@@ -33,8 +40,11 @@
   text-shadow: none;
 }
 
+/*
+   * A better looking default horizontal rule
+   */
+
 hr {
-  /* A better looking default horizontal rule */
   display: block;
   height: 1px;
   border: 0;
@@ -43,315 +53,128 @@ hr {
   padding: 0;
 }
 
+/*
+   * Remove the gap between audio, canvas, iframes,
+   * images, videos and the bottom of their containers:
+   * https://github.com/h5bp/html5-boilerplate/issues/440
+   */
+
 audio,
 canvas,
 iframe,
 img,
 svg,
 video {
-  /* https://github.com/h5bp/html5-boilerplate/issues/440 */
   vertical-align: middle;
 }
 
+/*
+   * Remove default fieldset styles.
+   */
+
 fieldset {
-  /* Remove default fieldset styles. */
   border: 0;
   margin: 0;
   padding: 0;
 }
 
+/*
+   * Allow only vertical resizing of textareas.
+   */
+
 textarea {
-  /* Allow only vertical resizing of textareas. */
   resize: vertical;
 }
 
-
-/* 1.3 Core Styling */
-body,
-footer {
-  font-family: "Ubuntu", sans-serif;
-}
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  color: #3b3b3b;
-}
-p {
-  font-size: 13px;
+img {
+  width: 100%;
 }
 
-h3 {
-  font-size: larger;
-  font-weight: bold;
+h1 {
+  color: #000;
 }
 
-p {
-  color: gray;
-}
-.section_title h3 {
-  font-size: 30px;
-  position: relative;
-  margin: 2%;
-}
-.none {
-  display: none;
-}
 /* ==========================================================================
- 2. LAYOUT
- ========================================================================== */
-/* Header */
-#main {
-  margin: 0 auto;
-  padding: 2rem;
-  background-color: rgb(255 255 255);
-}
+     Layout
+     ========================================================================== */
 
 
-@media screen and (max-width: 39.9375em) {
-  #main {
-    max-width: 20rem;
-    margin: 0 auto;
-    display: grid;
- }
-.nav_item {
-  display: none;
+p {
+  text-align: center;
 }
-.logo_img {
-  display: none;
+
+.row {
+  display: grid;
+  row-gap: 1rem;
 }
-.hero-banner {
-  display: none;
+
+.column {
+  position: relative;
 }
-.websol_box,
-.photo_box,
-.webdev_box,
-.webdes_box {
+
+.heading_section {
+  font-family: Ubuntu, Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 500;
+  text-align: center;
+}
+.subheading_section {
+  text-align: center;
+  color: #c3c3c3;
+  font-weight: normal;
+}
+.logo {
+  max-width: 1.5rem;
+  max-height: 1.5rem;
+  padding-left: 1rem;
+}
+.metrolics_logo {
   display: flex;
-  align-items: center;
-  max-width: 20rem;
+  align-items: baseline;
+  position: relative;
+  justify-content: center;
+  top: 3rem;
+}
+/* Hero banner */
+.hero_banner {
+  background-color: #ebebeb;
+  display: flex;
+  justify-content: center;
+  margin-top: -50px;
 }
 
-.section_text {
-   display: flex;
- flex-direction: column;
- padding: 1rem;
-}
-.section_image {
-   width:5rem;
+.hero_banner img {
+  height: 60vh;
+  width: 80vw;
 }
 
-.sample_img {
-
-overflow: initial;
-
+.banner_info {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  position: absolute;
+  top: 50%;
+  left: 20%;
+  transform: translateY(-50%);
 }
 
-
+.banner_info_item {
+  display: inline-block;
+  width: fit-content;
+  background: #ffffff;
+  padding: 1.5rem;
+  font-weight: bolder;
 }
-/* Medium and up */
-@media screen and (min-width: 40em) {
-  .logo_img {
-    max-width: 1.5rem;
-    max-height: 1.5rem;
-    padding-left: 1rem;
-  }
-  .logo_header {
-    display: flex;
-    flex-direction: row;
-    align-items: baseline;
-  }
-
-  .row {
-    width: 85vw;
-    max-width: 70rem;
-    column-gap: 1.5rem;
-    row-gap: 1.5rem;
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    position: relative;
-    left: 10%;
-  }
-  .nav_item {
-    display: block;
-    position: relative;
-    padding: 4rem 1rem 0rem 0.5rem;
-    line-height: 2rem;
-    font-size: 0.6rem;
-    text-align: left;
-    padding-left: 3%;
-    background-color: rgb(184, 184, 184);
-    background-position-x: center;
-    background-position-y: center;
-    background-size: 2.3rem, 2rem;
-    width: 100%;
-    font-size: 1.3rem;
-    color: white;
-    text-decoration: none;
-    background-repeat: no-repeat;
-  }
-  .nav_item::after {
-    content: ">";
-    display: inline-block;
-    position: absolute;
-    right: 1rem;
-  }
-
-  .nav_item.active::after {
-    content: "";
-  }
-
-  .navbar {
-    display: flex;
-    flex-direction: row;
-  }
-
-  .slider img {
-    width: 80%;
-    position: relative;
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
-  }
-
-  .hero_banner {
-    transition: all 0.3s ease;
-    background-color: #ebebeb;
-    text-align: center;
-    line-height: 0;
-  }
-  
-  .slider_info {
-    position: relative;
-    line-height: 1.3;
-    display: flex;
+.banner_info_item + .slide__info__item {
+  margin-top: 0.1rem;
 }
-  .slider_info ul {
-    list-style: none;
-    color: #3c3c3c;
-    font-size: 1.5em;
-    padding: 6em 0 0 6em;
-    margin-top: -35%;
-    margin-left: 10%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    text-align: left;
-  }
-
-  .slider_info li {
-    margin: 1px;
-    display: block;
+.banner_info_item:first-child {
+  border-left: 1rem solid #166ba2;
 }
-  .slider_info li span {
-    display: inline-block;
-    background-color: #eef5fc;
-    padding: 0.5em 1em;
+.banner_info_item:nth-child(2) {
+  border-left: 1rem solid #de6262;
 }
-
-
-  .slider_info li:nth-child(1) span {
-    border-left: 6px solid #0064a3;
-  }
-  .slider_info li:nth-child(2) span {
-    border-left: 6px solid #ef4a53;
-  }
-  .slider_info li:nth-child(3) span {
-    border-left: 6px solid #ffbb00;
-  }
-  .slide img {
-    transition: all 0.3s ease;
-  }
-
-  .slide {
-    position: absolute;
-    display: none;
-  }
-
-  .main {
-    display: block;
-  }
-
-  .slider_nav .fa {
-    position: absolute;
-    top: 50%;
-    height: 1em;
-    width: 1em;
-    margin-top: -50px;
-    border: 3px solid #fff;
-    border-radius: 50%;
-    color: white;
-}
-
-.slider_nav .fa:before {
-    position: relative;
-    top: -0.12em;
-}
-
-.slider_nav .fa-angle-left {
-    left: 5.5em;
-}
-
-.slider_nav .fa-angle-left::before {
-    left: 0em;
-}
-
-.slider_nav .fa-angle-right {
-    right: 15rem;
-}
-
-.slider_nav .fa-angle-right::before {
-    right: 0em;
-}
-.slider_nav .fa:hover {
-  background-color: #0064a3;
-}
-
-.slider_nav span {
-  display:none;
-}
-
-  /* Medium only */
-  @media screen and (min-width: 40em) and (max-width: 63.9375em) {
-   
-
-    
-  }
-}
-/* Large and up */
-@media screen and (min-width: 64em) {
-  .l-col-1 {
-    grid-template-columns: 1fr;
-  }
-  .l--col-2 {
-    grid-template-columns: repeat(2, 1fr);
-  }
-  .l--col-3 {
-    grid-template-columns: repeat(3, 1fr);
-  }
-  .l-col-4 {
-    grid-template-columns: repeat(4, 1fr);
-  }
-  .l-col-5 {
-    grid-template-columns: repeat(5, 1fr);
-  }
-  .l-col-6 {
-    grid-template-columns: repeat(6, 1fr);
-  }
-  .l-col-7 {
-    grid-template-columns: repeat(7, 1fr);
-  }
-  .l-col-8 {
-    grid-template-columns: repeat(8, 1fr);
-  }
-  .l-col-9 {
-    grid-template-columns: repeat(9, 1fr);
-  }
-  .l-col-10 {
-    grid-template-columns: repeat(10, 1fr);
-  }
+.banner_info_item:nth-child(3) {
+  border-left: 1rem solid #ffb901;
 }
 
 /* Accordion */
@@ -370,6 +193,7 @@ overflow: initial;
 .accordion_menu_item_title,
 .accordion_menu_inner {
   border: 1px solid #eaeaea;
+  transition: 0.4s;
 }
 
 .accordion_menu_item_title {
@@ -396,24 +220,38 @@ overflow: initial;
   padding: 1em 2em 2em 2em;
   color: #6e6e6e;
   background-color: #f8f8f8;
+  margin-top: -10px;
 }
 
-.accordion_menu_inner .a_title {
+.accordion_menu_item {
   font-weight: 700;
   font-size: 0.9em;
   color: #545454;
-  padding: 0 0 6em 6.5rem;
+  padding: 0 0 6em 0rem;
   margin: 1.5em 0 -6em 0;
   background-repeat: no-repeat;
 }
 
-.accordion_menu_inner .accordion_menu_span {
+.accordion_menu_item + div {
   font-weight: 300;
   font-size: 0.772em;
   line-height: 1.6em;
   margin: 0.3em 0 0 0;
-  padding: 0 0 2em 6.5rem;
+  padding: 0 0 2em 0rem;
   color: #939393;
+}
+.accordion_menu_text {
+  display: flex;
+  flex-direction: column;
+}
+.accordion_menu_inner img {
+  width: 20%;
+  height: 20%;
+}
+.accordion_menu_inner_content {
+  display: flex;
+  gap: 5%;
+  align-items: center;
 }
 
 /* Menu */
@@ -457,6 +295,7 @@ overflow: initial;
   background-position: center left;
   background-size: 33px 33px;
   padding-left: 4.5em;
+  color: #939393;
 }
 
 .menu_tab_inner li:nth-child(1) {
@@ -471,91 +310,470 @@ overflow: initial;
 .menu_tab_inner li:nth-child(4) {
   background-image: url("../img/people.png");
 }
+
+  /* Small only */
+  @media screen and (max-width: 39.9375em) {
+    .hero_banner{
+      display: none;
+    }
+    .s-hide {
+      display: none;
+    }
+  
+    .tweets {
+      text-align: center;
+    }
+    .logo {
+      max-height: 3rem;
+      position: static;
+    }
+    .main-nav {
+      display: none;
+    }
+    .fa-bars {
+      position: relative;
+      left: 75%;
+      top: 100%;
+      background-color: #3a94ba;
+      padding: 1rem;
+      color: white;
+    }
+    .metrolics_logo {
+      padding-left: 5%;
+      justify-content: flex-start;
+      top: 0rem;
+    }
+    
+    .s-hide {
+      display: none;
+    }
+
+    .tweets {
+      text-align: center;
+    }
+
+    .logo {
+      max-height: 3rem;
+    }
+
+    .aboutText {
+      display: none;
+    }
+
+    .logoGrid {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+      grid-template-rows: 1fr;
+      gap: 0px 0.1rem;
+      width: 25rem;
+      height: 5rem;
+    }
+    .about_section {
+      display: flex;
+      align-items: center;
+    }
+    .section_image {
+      width: 100px;
+      height:100px;
+    }
+    .section_text {
+      text-align: left;
+      padding-left: 10px;
+    }
+    .section_subheading {
+      text-align: left;
+    }
+  }
+
+
+/* Medium and up */
+@media screen and (min-width: 40em) {
+  .row {
+    width: 85vw;
+    max-width: 70rem;
+    margin: 0 auto;
+    column-gap: 1.5rem;
+    row-gap: 1.5rem;
+    margin: 0 auto 3rem auto;
+  }
+
+  .m-col-2 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .m-col-3 {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .m-col-4 {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .m-col-5 {
+    grid-template-columns: repeat(5, 1fr);
+  }
+  .m-col-6 {
+    grid-template-columns: repeat(6, 1fr);
+  }
+
+  .m-1-2 {
+    grid-template-columns: 1fr 2fr;
+  }
+
+  .span-full {
+    grid-column-start: 1;
+    grid-column-end: -1;
+  }
+
+  .main-nav {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .main-nav_item {
+    display: inline-block;
+    position: relative;
+    padding: 6rem 4rem 0rem 0rem;
+    line-height: 2rem;
+    font-size: 0.6rem;
+    text-align: left;
+    background-color: rgb(184, 184, 184);
+    background-position-x: center;
+    background-position-y: center;
+    background-size: 2.3rem, 2rem;
+    width: 100%;
+    font-size: 1.3rem;
+    color: white;
+    text-decoration: none;
+    background-repeat: no-repeat;
+  }
+  a.main-nav_item {
+    padding-left: 15px;
+    padding-bottom: 5px;
+  }
+
+  .main-nav_item::after {
+    content: ">";
+    display: inline-block;
+    position: absolute;
+    right: 1.1rem;
+  }
+  .span-full {
+    grid-column-start: 1;
+    grid-column-end: -1;
+  }
+
+  .main-nav_item.active::after {
+    content: "";
+  }
+  .mobile-nav {
+    display: none;
+  }
+  .about_section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .section_image {
+    width: 50%;
+  }
+  .sub-grid {
+    display: grid;
+    column-gap: 0.5rem;
+    row-gap: 0.5rem;
+  }
+  .section_heading {
+    text-align: center;
+  }
+  .section_subheading {
+    text-align: center;
+  }
+/* Medium only */
+@media screen and (min-width: 40em) and (max-width: 63.9375em) {
+  .m-hide {
+    display: none;
+  }
+
+  .special-project {
+    grid-column-start: 1;
+    grid-column-end: -1;
+  }
+
+  .main-nav_item {
+    padding: 5rem 3rem 1rem 0rem;
+  }
+  
+  
+}
+/* Large and up */
+@media screen and (min-width: 64em) {
+  .l-col-2 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .l-col-3 {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .l-col-4 {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .l-col-5 {
+    grid-template-columns: repeat(5, 1fr);
+  }
+  .l-col-6 {
+    grid-template-columns: repeat(6, 1fr);
+  }
+
+  .l-hide {
+    display: none;
+  }
+
+  .main-nav {
+    display: flex;
+    flex-direction: row;
+  }
+}
 /* Large only */
 @media screen and (min-width: 64em) and (max-width: 74.9375em) {
+  .l-hide {
+    display: none;
+  }
 }
 
 /* ==========================================================================
- 3. MODULES
+  Modules
  ========================================================================== */
-.nav_item:nth-child(1) {
+
+
+/* Large and up */
+@media screen and (min-width: 64em) {
+.l-col-2 {
+  grid-template-columns: repeat(2, 1fr);
+}
+.l-col-3 {
+  grid-template-columns: repeat(3, 1fr);
+}
+.l-col-4 {
+  grid-template-columns: repeat(4, 1fr);
+}
+.l-col-5 {
+  grid-template-columns: repeat(5, 1fr);
+}
+.l-col-6 {
+  grid-template-columns: repeat(6, 1fr);
+}
+
+.l-hide {
+  display: none;
+}
+
+.main-nav {
+  display: flex;
+  flex-direction: row;
+}
+}
+/* Large only */
+@media screen and (min-width: 64em) and (max-width: 74.9375em) {
+.l-hide {
+  display: none;
+}
+}
+
+
+}
+
+  /* ==========================================================================
+     Layout
+     ========================================================================== */
+
+  .inputBox {
+    background-color: orange;
+    font-size: 1rem;
+    resize: none;
+    margin: 0%;
+    padding-top: 15px;
+  }
+
+  li {
+    list-style-type: none;
+  }
+
+  .logoGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 0px 0.1rem;
+    width: 12rem;
+    height: 5rem;
+  }
+
+
+  
+
+/* ==========================================================================
+    Modules
+   ========================================================================== */
+
+
+/* ==========================================================================
+     Theme
+     ========================================================================== */
+
+.page_footer {
+  background-color: #16242f;
+  color: white;
+  margin-bottom: -50px;
+}
+
+.page_footer .row {
+  background-image: url(../img/bj_colorbar.png);
+  background-repeat: no-repeat;
+  background-position: bottom right;
+  padding-bottom: 3rem;
+}
+
+.page_footer_intro img {
+  width: 25%;
+  height: 50%;
+  border-radius: 50%;
+}
+.page_footer_intro {
+  display: flex;
+  align-items: center;
+}
+.page_footer_intro_text {
+  display: flex;
+  flex-direction: column;
+  padding-left: 10px;
+}
+
+.inverted {
+  color: white;
+}
+
+.greenLine {
+  border-bottom: 1px solid green;
+  line-height: 2rem;
+}
+
+.yellowLine {
+  border-bottom: 1px solid yellow;
+  line-height: 2rem;
+}
+
+.redLine {
+  border-bottom: 1px solid red;
+  line-height: 2rem;
+}
+/* main nav coloours and icons */
+
+.main-nav_item:nth-child(1) {
   background-color: #25c389;
   background-image: url(../img/circle.svg), url(../img/house-user.svg);
 }
-.nav_item:nth-child(2) {
+.main-nav_item:nth-child(2) {
   background-color: #ffb901;
   background-image: url(../img/circle.svg), url(../img/network-wired.svg);
 }
-.nav_item:nth-child(3) {
+.main-nav_item:nth-child(3) {
   background-color: #de6262;
   background-image: url(../img/circle.svg), url(../img/bullhorn.svg);
 }
-.nav_item:nth-child(4) {
+.main-nav_item:nth-child(4) {
   background-color: #1691bd;
   background-image: url(../img/circle.svg), url(../img/briefcase.svg);
 }
-.nav_item:nth-child(5) {
+.main-nav_item:nth-child(5) {
   background-color: #166ba2;
   background-image: url(../img/circle.svg), url(../img/envelope.svg);
 }
-/* ==========================================================================
- 4. STATES
- ========================================================================== */
-/* /* ==========================================================================
- 5. UTILITIES
- ========================================================================== */
-/* * Hide visually and from screen readers */
-.hidden {
+
+.blueLine {
+  border-bottom: 1px solid blue;
+  line-height: 2rem;
+}
+/*
+   * Hide visually and from screen readers
+   */
+
+.hidden,
+[hidden] {
   display: none !important;
 }
 
-/* * Hide only visually, but have it available for screen readers:
-* https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
-*
-* 1. For long content, line feeds are not interpreted as spaces and small width
-*    causes content to wrap 1 word per line:
-*    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe */
-.visuallyhidden {
+/*
+   * Hide only visually, but have it available for screen readers:
+   * https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+   *
+   * 1. For long content, line feeds are not interpreted as spaces and small width
+   *    causes content to wrap 1 word per line:
+   *    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
+   */
+
+.sr-only {
   border: 0;
-  clip: rect(0 0 0 0);
+  clip: rect(0, 0, 0, 0);
   height: 1px;
   margin: -1px;
   overflow: hidden;
   padding: 0;
   position: absolute;
-  width: 1px;
   white-space: nowrap;
+  width: 1px;
+  /* 1 */
 }
 
-/* * Extends the .visuallyhidden class to allow the element
-* to be focusable when navigated to via the keyboard:
-* https://www.drupal.org/node/897638 */
-.visuallyhidden.focusable:active,
-.visuallyhidden.focusable:focus {
+/*
+   * Extends the .sr-only class to allow the element
+   * to be focusable when navigated to via the keyboard:
+   * https://www.drupal.org/node/897638
+   */
+
+.sr-only.focusable:active,
+.sr-only.focusable:focus {
   clip: auto;
   height: auto;
   margin: 0;
   overflow: visible;
   position: static;
-  width: auto;
   white-space: inherit;
+  width: auto;
 }
 
-/* * Hide visually and from screen readers, but maintain layout */
+/*
+   * Hide visually and from screen readers, but maintain layout
+   */
+
 .invisible {
   visibility: hidden;
 }
 
-/* * Clearfix: contain floats
-* http://nicolasgallagher.com/micro-clearfix-hack/ */
-.clearfix:before,
-.clearfix:after {
+/*
+   * Clearfix: contain floats
+   *
+   * For modern browsers
+   * 1. The space content is one way to avoid an Opera bug when the
+   *    `contenteditable` attribute is included anywhere else in the document.
+   *    Otherwise it causes space to appear at the top and bottom of elements
+   *    that receive the `clearfix` class.
+   * 2. The use of `table` rather than `block` is only necessary if using
+   *    `:before` to contain the top-margins of child elements.
+   */
+
+.clearfix::before,
+.clearfix::after {
   content: " ";
   display: table;
 }
 
-.clearfix:after {
+.clearfix::after {
   clear: both;
+}
+
+/* ==========================================================================
+     EXAMPLE Media Queries for Responsive Design.
+     These examples override the primary ('mobile first') styles.
+     Modify as content requires.
+     ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+  /* Style adjustments for viewports that meet the condition */
 }
 
 @media print,
@@ -565,50 +783,19 @@ overflow: initial;
   /* Style adjustments for high resolution devices */
 }
 
-/* Accordions */
-.accordion {
-  background-color: #ffffff;
-  color: #656565;
-  cursor: pointer;
-  padding: 18px;
-  width: 100%;
-  text-align: left;
-  transition: 0.6s;
-  border: 1px solid #cbcbcb;
-}
-
-.active,
-.accordion:hover {
-  background-color: #19b2de;
-  color: #fefff0;
-}
-
-.panel {
-  padding: 0 5%;
-  background-color: white;
-  overflow: hidden;
-  border: 1px solid #cbcbcb;
-  position: relative;
-  display: none;
-}
-
-.panel_text p,
-.panel_text h2 {
-  text-align: left;
-}
 /* ==========================================================================
- 6. PRINT
- https://www.phpied.com/delay-loading-your-print-css/
- ========================================================================== */
+     Print styles.
+     Inlined to avoid the additional HTTP request:
+     https://www.phpied.com/delay-loading-your-print-css/
+     ========================================================================== */
+
 @media print {
   *,
-  *:before,
-  *:after {
-    background: transparent !important;
+  *::before,
+  *::after {
+    background: #fff !important;
     color: #000 !important;
-
     /* Black prints faster */
-    -webkit-box-shadow: none !important;
     box-shadow: none !important;
     text-shadow: none !important;
   }
@@ -618,18 +805,20 @@ overflow: initial;
     text-decoration: underline;
   }
 
-  a[href]:after {
+  a[href]::after {
     content: " (" attr(href) ")";
   }
 
-  abbr[title]:after {
+  abbr[title]::after {
     content: " (" attr(title) ")";
   }
 
-  /* * Don't show links that are fragment identifiers,
-   * or use the `javascript:` pseudo protocol */
-  a[href^="#"]:after,
-  a[href^="javascript:"]:after {
+  /*
+     * Don't show links that are fragment identifiers,
+     * or use the `javascript:` pseudo protocol
+     */
+  a[href^="#"]::after,
+  a[href^="javascript:"]::after {
     content: "";
   }
 
@@ -643,8 +832,10 @@ overflow: initial;
     page-break-inside: avoid;
   }
 
-  /* * Printing Tables:
-   * http://css-discuss.incutio.com/wiki/Printing_Tables */
+  /*
+     * Printing Tables:
+     * https://web.archive.org/web/20180815150934/http://css-discuss.incutio.com/wiki/Printing_Tables
+     */
   thead {
     display: table-header-group;
   }
@@ -665,14 +856,4 @@ overflow: initial;
   h3 {
     page-break-after: avoid;
   }
-}
-
-/* ==========================================================================
- 6. MISC
- ========================================================================== */
-.browserupgrade {
-  margin: 0.2em 0;
-  background: #ccc;
-  color: #000;
-  padding: 0.2em 0;
 }
