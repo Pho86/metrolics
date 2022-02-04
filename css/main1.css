@@ -516,11 +516,6 @@ p {
   background-color: #ebebeb;
 }
 
-.page_slider img {
-  /* temp height limit */
-  height: 25vh;
-}
-
 .project {
   position: relative;
   margin: 0;
