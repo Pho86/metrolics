@@ -7,3 +7,4 @@ dist
 _pgbackup
 pinegrow.json
 .DS_Store
+.history
